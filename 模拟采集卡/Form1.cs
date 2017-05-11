@@ -475,6 +475,7 @@ namespace 模拟采集卡
                 button6.Image = global::模拟采集卡.Properties.Resources.stop;
                 //t = new Thread(WriteExcelData);
                 //t.Start();
+                curveTimer.Enabled = true;
                 StartFlag = true;
                 dataTimer.Enabled = true;
                 toolStripButton1.Enabled = false;

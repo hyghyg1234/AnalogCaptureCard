@@ -506,7 +506,7 @@
             this.button6.Font = new System.Drawing.Font("宋体", 13F, System.Drawing.FontStyle.Bold);
             this.button6.Image = global::模拟采集卡.Properties.Resources.start;
             this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(495, 61);
+            this.button6.Location = new System.Drawing.Point(377, 61);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(139, 54);
             this.button6.TabIndex = 187;
