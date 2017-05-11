@@ -1,0 +1,20 @@
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.csprojResolveAssemblyReference.cache
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.Form1.resources
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.Properties.Resources.resources
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.serial.resources
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.csproj.GenerateResource.Cache
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\bin\Debug\模拟数据.exe.config
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\bin\Debug\模拟数据.exe
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\bin\Debug\模拟数据.pdb
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.exe
+c:\users\yougang\documents\visual studio 2015\Projects\模拟数据\模拟数据\obj\Debug\模拟数据.pdb
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\bin\Debug\模拟数据.exe.config
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.exe
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.pdb
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\bin\Debug\模拟数据.exe
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\bin\Debug\模拟数据.pdb
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.csprojResolveAssemblyReference.cache
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.Form1.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.Properties.Resources.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.serial.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟数据\模拟数据\obj\Debug\模拟数据.csproj.GenerateResource.Cache

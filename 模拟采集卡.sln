@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "模拟采集卡", "模拟采集卡\模拟采集卡.csproj", "{7577336B-DEA9-4F50-814B-A6C71559F553}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "模拟数据", "模拟数据\模拟数据\模拟数据.csproj", "{D2C9D6FD-ACA2-44A7-89DF-F55C6AC11AFF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7577336B-DEA9-4F50-814B-A6C71559F553}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7577336B-DEA9-4F50-814B-A6C71559F553}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7577336B-DEA9-4F50-814B-A6C71559F553}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7577336B-DEA9-4F50-814B-A6C71559F553}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C9D6FD-ACA2-44A7-89DF-F55C6AC11AFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C9D6FD-ACA2-44A7-89DF-F55C6AC11AFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C9D6FD-ACA2-44A7-89DF-F55C6AC11AFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C9D6FD-ACA2-44A7-89DF-F55C6AC11AFF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

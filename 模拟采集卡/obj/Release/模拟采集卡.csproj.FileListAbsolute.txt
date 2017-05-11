@@ -1,0 +1,14 @@
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\模拟采集卡.exe.config
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\CSkin.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\LBIndustrialCtrls.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\Manometers.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\ZedGraph.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Release\CSkin.xml
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.Form1.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.Properties.Resources.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.Setting.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.csproj.GenerateResource.Cache
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Release\模拟采集卡.pdb

@@ -1,0 +1,91 @@
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\bin\Debug\模拟采集卡.exe.config
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\obj\Debug\压力测试.Form1.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\obj\Debug\模拟采集卡.Properties.Resources.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\obj\Debug\压力测试.Setting.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\压力测试\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.pdb
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\Manometers.dll
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\ZedGraph.dll
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.exe
+C:\Users\yg.hu\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.pdb
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.exe
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.pdb
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.pdb
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\Manometers.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\ZedGraph.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.exe
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.pdb
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.pdb
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\Manometers.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\ZedGraph.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\CSkin.dll
+C:\Users\yougang\Desktop\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\CSkin.xml
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\CSkin.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\Manometers.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\ZedGraph.dll
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\bin\Debug\CSkin.xml
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+F:\Documents and Settings\Administrator\桌面\新浪SAE\项目\项目1\1\ADS1256串口采集模块陪亚当壳\程序\上位机\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\Manometers.dll
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\ZedGraph.dll
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\bin\Debug\CSkin.xml
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+F:\Documents and Settings\Administrator\桌面\上位机\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\模拟采集卡.exe.config
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\模拟采集卡.exe
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\模拟采集卡.pdb
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\LBIndustrialCtrls.dll
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\Manometers.dll
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\ZedGraph.dll
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\bin\Debug\CSkin.xml
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.csprojResolveAssemblyReference.cache
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.Form1.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.Properties.Resources.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.serial.resources
