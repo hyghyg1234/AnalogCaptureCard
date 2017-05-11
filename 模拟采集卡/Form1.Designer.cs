@@ -75,21 +75,21 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox6 = new System.Windows.Forms.CheckBox();
+            this.checkBox7 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
@@ -640,33 +640,26 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "第二页";
             // 
-            // zedGraphControl1
+            // button4
             // 
-            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
-            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.zedGraphControl1.Location = new System.Drawing.Point(135, 106);
-            this.zedGraphControl1.Name = "zedGraphControl1";
-            this.zedGraphControl1.ScrollGrace = 0D;
-            this.zedGraphControl1.ScrollMaxX = 100D;
-            this.zedGraphControl1.ScrollMaxY = 100D;
-            this.zedGraphControl1.ScrollMaxY2 = 50D;
-            this.zedGraphControl1.ScrollMinX = 0D;
-            this.zedGraphControl1.ScrollMinY = 0D;
-            this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(453, 278);
-            this.zedGraphControl1.TabIndex = 129;
+            this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.ForeColor = System.Drawing.Color.Red;
+            this.button4.Location = new System.Drawing.Point(540, 190);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(60, 68);
+            this.button4.TabIndex = 173;
+            this.button4.Text = "设定";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // label8
+            // textBox3
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label8.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(364, 229);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 19);
-            this.label8.TabIndex = 171;
-            this.label8.Text = "最小值";
+            this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox3.Location = new System.Drawing.Point(453, 190);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(81, 29);
+            this.textBox3.TabIndex = 170;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -677,17 +670,21 @@
             this.textBox4.TabIndex = 172;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // label9
+            // zedGraphControl1
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(381, 193);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 19);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "最大值";
+            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
+            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.zedGraphControl1.Location = new System.Drawing.Point(1, 1);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 100D;
+            this.zedGraphControl1.ScrollMaxY = 100D;
+            this.zedGraphControl1.ScrollMaxY2 = 50D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(769, 374);
+            this.zedGraphControl1.TabIndex = 129;
             // 
             // panel1
             // 
@@ -700,101 +697,10 @@
             this.panel1.Controls.Add(this.checkBox5);
             this.panel1.Controls.Add(this.checkBox8);
             this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Location = new System.Drawing.Point(25, 475);
+            this.panel1.Location = new System.Drawing.Point(6, 381);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(772, 42);
             this.panel1.TabIndex = 185;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox4.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox4.Location = new System.Drawing.Point(305, 11);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(63, 22);
-            this.checkBox4.TabIndex = 181;
-            this.checkBox4.Text = "-CH4";
-            this.checkBox4.UseVisualStyleBackColor = false;
-            // 
-            // checkBox8
-            // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox8.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox8.Location = new System.Drawing.Point(701, 11);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(63, 22);
-            this.checkBox8.TabIndex = 183;
-            this.checkBox8.Text = "-CH8";
-            this.checkBox8.UseVisualStyleBackColor = false;
-            // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox5.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox5.Location = new System.Drawing.Point(404, 11);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(63, 22);
-            this.checkBox5.TabIndex = 180;
-            this.checkBox5.Text = "-CH5";
-            this.checkBox5.UseVisualStyleBackColor = false;
-            // 
-            // checkBox7
-            // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox7.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox7.Location = new System.Drawing.Point(602, 11);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(63, 22);
-            this.checkBox7.TabIndex = 184;
-            this.checkBox7.Text = "-CH7";
-            this.checkBox7.UseVisualStyleBackColor = false;
-            // 
-            // checkBox6
-            // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox6.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox6.Location = new System.Drawing.Point(503, 11);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(63, 22);
-            this.checkBox6.TabIndex = 179;
-            this.checkBox6.Text = "-CH6";
-            this.checkBox6.UseVisualStyleBackColor = false;
-            // 
-            // checkBox2
-            // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox2.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox2.Location = new System.Drawing.Point(107, 11);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(63, 22);
-            this.checkBox2.TabIndex = 177;
-            this.checkBox2.Text = "-CH2";
-            this.checkBox2.UseVisualStyleBackColor = false;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("宋体", 13F);
-            this.checkBox1.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox1.Location = new System.Drawing.Point(8, 11);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 22);
-            this.checkBox1.TabIndex = 176;
-            this.checkBox1.Text = "-CH1";
-            this.checkBox1.UseVisualStyleBackColor = false;
             // 
             // checkBox3
             // 
@@ -809,26 +715,120 @@
             this.checkBox3.Text = "-CH3";
             this.checkBox3.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // checkBox1
             // 
-            this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox3.Location = new System.Drawing.Point(453, 190);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 29);
-            this.textBox3.TabIndex = 170;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox1.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox1.Location = new System.Drawing.Point(8, 11);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(63, 22);
+            this.checkBox1.TabIndex = 176;
+            this.checkBox1.Text = "-CH1";
+            this.checkBox1.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // checkBox2
             // 
-            this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(528, 177);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 68);
-            this.button4.TabIndex = 173;
-            this.button4.Text = "设定";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox2.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox2.Location = new System.Drawing.Point(107, 11);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(63, 22);
+            this.checkBox2.TabIndex = 177;
+            this.checkBox2.Text = "-CH2";
+            this.checkBox2.UseVisualStyleBackColor = false;
+            // 
+            // checkBox6
+            // 
+            this.checkBox6.AutoSize = true;
+            this.checkBox6.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox6.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox6.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox6.Location = new System.Drawing.Point(503, 11);
+            this.checkBox6.Name = "checkBox6";
+            this.checkBox6.Size = new System.Drawing.Size(63, 22);
+            this.checkBox6.TabIndex = 179;
+            this.checkBox6.Text = "-CH6";
+            this.checkBox6.UseVisualStyleBackColor = false;
+            // 
+            // checkBox7
+            // 
+            this.checkBox7.AutoSize = true;
+            this.checkBox7.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox7.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox7.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox7.Location = new System.Drawing.Point(602, 11);
+            this.checkBox7.Name = "checkBox7";
+            this.checkBox7.Size = new System.Drawing.Size(63, 22);
+            this.checkBox7.TabIndex = 184;
+            this.checkBox7.Text = "-CH7";
+            this.checkBox7.UseVisualStyleBackColor = false;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox5.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox5.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox5.Location = new System.Drawing.Point(404, 11);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(63, 22);
+            this.checkBox5.TabIndex = 180;
+            this.checkBox5.Text = "-CH5";
+            this.checkBox5.UseVisualStyleBackColor = false;
+            // 
+            // checkBox8
+            // 
+            this.checkBox8.AutoSize = true;
+            this.checkBox8.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox8.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox8.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox8.Location = new System.Drawing.Point(701, 11);
+            this.checkBox8.Name = "checkBox8";
+            this.checkBox8.Size = new System.Drawing.Size(63, 22);
+            this.checkBox8.TabIndex = 183;
+            this.checkBox8.Text = "-CH8";
+            this.checkBox8.UseVisualStyleBackColor = false;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox4.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox4.ForeColor = System.Drawing.Color.Blue;
+            this.checkBox4.Location = new System.Drawing.Point(305, 11);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(63, 22);
+            this.checkBox4.TabIndex = 181;
+            this.checkBox4.Text = "-CH4";
+            this.checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label9.Font = new System.Drawing.Font("宋体", 14.25F);
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(381, 193);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(66, 19);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "最大值";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.SystemColors.HotTrack;
+            this.label8.Font = new System.Drawing.Font("宋体", 14.25F);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(364, 229);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(66, 19);
+            this.label8.TabIndex = 171;
+            this.label8.Text = "最小值";
             // 
             // tabPage1
             // 
