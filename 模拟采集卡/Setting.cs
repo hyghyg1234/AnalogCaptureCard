@@ -15,6 +15,9 @@ namespace 模拟采集卡
         {
             InitializeComponent();
         }
+        //定义带参数的委托与事件
+        public delegate void Mydelegate(string s);
+        public event Mydelegate SerialWriteEvent;
 
         int chanel;
         int ADS1256_DRATE;
@@ -114,42 +117,42 @@ namespace 模拟采集卡
 
         private void button6_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate1\r\n");
+            SerialWriteEvent("Calibrate1\r\n");
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate2\r\n");
+            SerialWriteEvent("Calibrate2\r\n");
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate3\r\n");
+            SerialWriteEvent("Calibrate3\r\n");
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate4\r\n");
+            SerialWriteEvent("Calibrate4\r\n");
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate5\r\n");
+            SerialWriteEvent("Calibrate5\r\n");
         }
 
         private void button11_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate6\r\n");
+            SerialWriteEvent("Calibrate6\r\n");
         }
 
         private void button12_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate7\r\n");
+            SerialWriteEvent("Calibrate7\r\n");
         }
 
         private void button13_Click(object sender, EventArgs e)
         {
-            serial.serialPort1.Write("Calibrate8\r\n");
+            SerialWriteEvent("Calibrate8\r\n");
         }
 
         private void button14_Click(object sender, EventArgs e)

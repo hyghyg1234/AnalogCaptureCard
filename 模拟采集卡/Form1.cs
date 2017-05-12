@@ -535,11 +535,24 @@ namespace 模拟采集卡
             //}    
         }
 
+        /// <summary>
+        /// 事件函数
+        /// </summary>
+        /// <param name="s"></param>
+        public void SetSerialWriteEvent(string s)
+        {
+            if (!serial.serialPort1.IsOpen)
+            {
+                serial.serialPort1.Open();
+            }
+            serial.serialPort1.Write(s);
+        }
+
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             Setting Set = new Setting();
             string CH_SET;
-
+            Set.SerialWriteEvent += SetSerialWriteEvent;    //事件添加函数
             if (Set.ShowDialog() == DialogResult.OK)
             {
                 CH_SET = Properties.Settings.Default.CH_SET;
