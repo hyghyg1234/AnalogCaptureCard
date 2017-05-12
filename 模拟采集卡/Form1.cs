@@ -32,6 +32,7 @@ namespace 模拟采集卡
         private GraphPane mGraphPane;
 
         serial serial = new serial();
+        CSVHelper csvHelper = new CSVHelper();
 
         List<System.Windows.Forms.CheckBox> CheckItem = new List<System.Windows.Forms.CheckBox>();     
         private void CheckItem_Add()
@@ -580,6 +581,41 @@ namespace 模拟采集卡
                 m_GradeTable.Rows[0].Delete();
             }
             toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
-        }    
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog FileSave = new SaveFileDialog();
+            FileSave.Title = "保存EXECL文件";
+            FileSave.Filter = "CSV文件(*.csv) |*.csv | 所有文件(*.*) |*.*";
+            FileSave.FilterIndex = 1;
+            if (FileSave.ShowDialog() == DialogResult.OK)
+            {
+                string FileName = FileSave.FileName;
+                if (File.Exists(FileName))
+                {
+                    File.Delete(FileName);
+                }
+                csvHelper.DataTableToCSV(m_GradeTable, FileName);
+                MessageBox.Show(this, "保存CSV成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "CSV文件|*.CSV";
+            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
+            {
+                return;
+            }
+            else
+            {
+                //this.dgvShow.DataSource = null;
+                string fileName = openFileDialog1.FileName;
+                //this.dgvShow.DataSource = OpenCSV(fileName);
+                m_GradeTable = csvHelper.CSVToDataTable(fileName);
+                MessageBox.Show("成功显示CSV数据！");
+            }
+        }
     }
 }

@@ -35,14 +35,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbDigitalMeter8 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label14 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label22 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.lbDigitalMeter7 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label16 = new System.Windows.Forms.Label();
@@ -65,6 +57,14 @@
             this.lbDigitalMeter1 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button14 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.curveTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -97,6 +97,8 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -169,92 +171,6 @@
             this.label14.Size = new System.Drawing.Size(47, 46);
             this.label14.TabIndex = 217;
             this.label14.Text = "V";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button14);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(627, 41);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 138);
-            this.groupBox1.TabIndex = 176;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "设置";
-            this.groupBox1.Visible = false;
-            // 
-            // button14
-            // 
-            this.button14.Font = new System.Drawing.Font("宋体", 12F);
-            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
-            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(276, 56);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(82, 43);
-            this.button14.TabIndex = 132;
-            this.button14.Text = "确定";
-            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox6.Location = new System.Drawing.Point(145, 100);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(112, 29);
-            this.textBox6.TabIndex = 27;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label22.Location = new System.Drawing.Point(10, 103);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(133, 19);
-            this.label22.TabIndex = 26;
-            this.label22.Text = "刷新时间（S）";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox2.Location = new System.Drawing.Point(145, 65);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 29);
-            this.textBox2.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label3.Location = new System.Drawing.Point(10, 68);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 19);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "曲线时间（S）";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label4.Location = new System.Drawing.Point(10, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 19);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "存储时间（S）";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox1.Location = new System.Drawing.Point(145, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 29);
-            this.textBox1.TabIndex = 22;
             // 
             // label15
             // 
@@ -534,6 +450,92 @@
             this.label6.TabIndex = 197;
             this.label6.Text = "CH1";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.button14);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
+            this.groupBox1.Location = new System.Drawing.Point(627, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(364, 138);
+            this.groupBox1.TabIndex = 176;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "设置";
+            this.groupBox1.Visible = false;
+            // 
+            // button14
+            // 
+            this.button14.Font = new System.Drawing.Font("宋体", 12F);
+            this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
+            this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button14.Location = new System.Drawing.Point(276, 56);
+            this.button14.Name = "button14";
+            this.button14.Size = new System.Drawing.Size(82, 43);
+            this.button14.TabIndex = 132;
+            this.button14.Text = "确定";
+            this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button14.UseVisualStyleBackColor = true;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox6.Location = new System.Drawing.Point(145, 100);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(112, 29);
+            this.textBox6.TabIndex = 27;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("宋体", 14.25F);
+            this.label22.Location = new System.Drawing.Point(10, 103);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(133, 19);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "刷新时间（S）";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox2.Location = new System.Drawing.Point(145, 65);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(112, 29);
+            this.textBox2.TabIndex = 25;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 14.25F);
+            this.label3.Location = new System.Drawing.Point(10, 68);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(133, 19);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "曲线时间（S）";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 14.25F);
+            this.label4.Location = new System.Drawing.Point(10, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 19);
+            this.label4.TabIndex = 23;
+            this.label4.Text = "存储时间（S）";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox1.Location = new System.Drawing.Point(145, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(112, 29);
+            this.textBox1.TabIndex = 22;
+            // 
             // curveTimer
             // 
             this.curveTimer.Tick += new System.EventHandler(this.timer2_Tick);
@@ -551,7 +553,7 @@
             this.toolStripButton4});
             this.toolStrip1.Location = new System.Drawing.Point(7, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(473, 86);
+            this.toolStrip1.Size = new System.Drawing.Size(451, 86);
             this.toolStrip1.TabIndex = 186;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -592,6 +594,7 @@
             this.toolStripButton2.Size = new System.Drawing.Size(94, 83);
             this.toolStripButton2.Text = "保存数据";
             this.toolStripButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
             // toolStripButton4
             // 
@@ -616,7 +619,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(804, 470);
+            this.tabPage3.Size = new System.Drawing.Size(807, 470);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -642,7 +645,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(804, 470);
+            this.tabPage2.Size = new System.Drawing.Size(807, 470);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "第二页";
             // 
@@ -924,11 +927,26 @@
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(27, 17);
             this.toolStripStatusLabel1.Text = "0行";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(512, 97);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 190;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1205, 699);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
@@ -1027,6 +1045,8 @@
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button1;
     }
 }
 
