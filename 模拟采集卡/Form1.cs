@@ -172,7 +172,7 @@ namespace 模拟采集卡
         #endregion
 
         private void Form1_Load(object sender, EventArgs e)
-        {
+        {           
             datagridview_Init();//datagridview初始化
             parameter_Init();   //参数初始化
             BindData();         //数据绑定到表格
@@ -394,6 +394,7 @@ namespace 模拟采集卡
             {
                 m_GradeTable.Rows.Add(SensorString);
                 dataGridView1.FirstDisplayedScrollingRowIndex = dataGridView1.RowCount - 1;
+                toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
             }
             if (CheckArray[0] == 1)
             {
@@ -574,6 +575,16 @@ namespace 模拟采集卡
                     }
                 }
             }
+        }
+
+        //右击清除
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            while (dataGridView1.RowCount > 1)
+            {
+                m_GradeTable.Rows[0].Delete();
+            }
+            toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
         }
     }
 }
