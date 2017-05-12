@@ -468,12 +468,12 @@ namespace 模拟采集卡
             serial.ShowDialog();
         }
 
-        private void button6_Click(object sender, EventArgs e)
+        private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            if (button6.Text == "开始采集")
+            if (toolStripButton4.Text == "开始采集")
             {
-                button6.Text = "停止采集";
-                button6.Image = global::模拟采集卡.Properties.Resources.stop;
+                toolStripButton4.Text = "停止采集";
+                toolStripButton4.Image = global::模拟采集卡.Properties.Resources.stop;
                 //t = new Thread(WriteExcelData);
                 //t.Start();
                 curveTimer.Enabled = true;
@@ -483,18 +483,13 @@ namespace 模拟采集卡
             }
             else
             {
-                button6.Text = "开始采集";
-                button6.Image = global::模拟采集卡.Properties.Resources.start;
+                toolStripButton4.Text = "开始采集";
+                toolStripButton4.Image = global::模拟采集卡.Properties.Resources.start;
                 StartFlag = false;
                 curveTimer.Enabled = false;
                 dataTimer.Enabled = false;
                 toolStripButton1.Enabled = true;
             }
-        }
-
-        private void toolStripButton2_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -585,6 +580,6 @@ namespace 模拟采集卡
                 m_GradeTable.Rows[0].Delete();
             }
             toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
-        }
+        }    
     }
 }
