@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbDigitalMeter8 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label14 = new System.Windows.Forms.Label();
@@ -73,7 +75,6 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.dataTimer = new System.Windows.Forms.Timer(this.components);
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -99,6 +100,7 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -110,6 +112,7 @@
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -460,7 +463,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(627, 41);
+            this.groupBox1.Location = new System.Drawing.Point(623, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(364, 138);
             this.groupBox1.TabIndex = 176;
@@ -615,22 +618,14 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.dataGridView2);
             this.tabPage3.Location = new System.Drawing.Point(4, 29);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(807, 470);
+            this.tabPage3.Size = new System.Drawing.Size(807, 428);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "tabPage3";
             this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(575, 132);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(55, 43);
-            this.textBox5.TabIndex = 180;
             // 
             // tabPage2
             // 
@@ -849,7 +844,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(807, 470);
+            this.tabPage1.Size = new System.Drawing.Size(807, 428);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "第一页";
             // 
@@ -880,7 +875,7 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 10;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(797, 460);
+            this.dataGridView1.Size = new System.Drawing.Size(797, 418);
             this.dataGridView1.TabIndex = 155;
             // 
             // contextMenuStrip1
@@ -905,17 +900,17 @@
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(80, 25);
-            this.tabControl1.Location = new System.Drawing.Point(386, 146);
+            this.tabControl1.Location = new System.Drawing.Point(386, 142);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(815, 503);
+            this.tabControl1.Size = new System.Drawing.Size(815, 461);
             this.tabControl1.TabIndex = 188;
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(4, 673);
+            this.statusStrip1.Location = new System.Drawing.Point(4, 611);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1197, 22);
             this.statusStrip1.TabIndex = 189;
@@ -933,7 +928,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(512, 97);
+            this.button1.Location = new System.Drawing.Point(508, 41);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 190;
@@ -941,11 +936,41 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // dataGridView2
+            // 
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowHeadersVisible = false;
+            this.dataGridView2.RowHeadersWidth = 10;
+            this.dataGridView2.RowTemplate.Height = 23;
+            this.dataGridView2.Size = new System.Drawing.Size(801, 422);
+            this.dataGridView2.TabIndex = 156;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 699);
+            this.ClientSize = new System.Drawing.Size(1205, 637);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
@@ -963,7 +988,6 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.tabPage3.ResumeLayout(false);
-            this.tabPage3.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -974,6 +998,7 @@
             this.tabControl1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1020,7 +1045,6 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox3;
@@ -1047,6 +1071,7 @@
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dataGridView2;
     }
 }
 

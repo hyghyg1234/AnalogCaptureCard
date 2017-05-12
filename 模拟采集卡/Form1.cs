@@ -610,10 +610,9 @@ namespace 模拟采集卡
             }
             else
             {
-                //this.dgvShow.DataSource = null;
+                this.dataGridView2.DataSource = null;
                 string fileName = openFileDialog1.FileName;
-                //this.dgvShow.DataSource = OpenCSV(fileName);
-                m_GradeTable = csvHelper.CSVToDataTable(fileName);
+                this.dataGridView2.DataSource = csvHelper.CSVToDataTable(fileName);
                 MessageBox.Show("成功显示CSV数据！");
             }
         }
