@@ -30,10 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbDigitalMeter8 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label14 = new System.Windows.Forms.Label();
@@ -76,15 +74,11 @@
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.dataTimer = new System.Windows.Forms.Timer(this.components);
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.保存ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.打开ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -94,26 +88,28 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -464,7 +460,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(825, 41);
+            this.groupBox1.Location = new System.Drawing.Point(564, 35);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(364, 138);
             this.groupBox1.TabIndex = 176;
@@ -559,7 +555,7 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(7, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(666, 86);
+            this.toolStrip1.Size = new System.Drawing.Size(703, 86);
             this.toolStrip1.TabIndex = 186;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -645,53 +641,14 @@
             // 
             this.dataTimer.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.dataGridView2);
-            this.tabPage3.Location = new System.Drawing.Point(4, 29);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(807, 428);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "tabPage3";
-            this.tabPage3.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView2.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView2.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.RowHeadersWidth = 10;
-            this.dataGridView2.RowTemplate.Height = 23;
-            this.dataGridView2.Size = new System.Drawing.Size(801, 422);
-            this.dataGridView2.TabIndex = 156;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
+            this.toolStripMenuItem1,
+            this.保存ToolStripMenuItem,
+            this.打开ToolStripMenuItem});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 26);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(101, 70);
             // 
             // toolStripMenuItem1
             // 
@@ -700,68 +657,36 @@
             this.toolStripMenuItem1.Text = "清除";
             this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
+            // 保存ToolStripMenuItem
+            // 
+            this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.保存ToolStripMenuItem.Text = "保存";
+            this.保存ToolStripMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
+            // 
+            // 打开ToolStripMenuItem
+            // 
+            this.打开ToolStripMenuItem.Name = "打开ToolStripMenuItem";
+            this.打开ToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            this.打开ToolStripMenuItem.Text = "打开";
+            this.打开ToolStripMenuItem.Click += new System.EventHandler(this.打开ToolStripMenuItem_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.button4);
             this.tabPage2.Controls.Add(this.textBox3);
             this.tabPage2.Controls.Add(this.textBox4);
             this.tabPage2.Controls.Add(this.zedGraphControl1);
-            this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(807, 428);
+            this.tabPage2.Size = new System.Drawing.Size(704, 433);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "第二页";
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(540, 190);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 68);
-            this.button4.TabIndex = 173;
-            this.button4.Text = "设定";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox3.Location = new System.Drawing.Point(453, 190);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 29);
-            this.textBox3.TabIndex = 170;
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            // 
-            // textBox4
-            // 
-            this.textBox4.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox4.Location = new System.Drawing.Point(453, 226);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 29);
-            this.textBox4.TabIndex = 172;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
-            // zedGraphControl1
-            // 
-            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
-            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.zedGraphControl1.Location = new System.Drawing.Point(1, 1);
-            this.zedGraphControl1.Name = "zedGraphControl1";
-            this.zedGraphControl1.ScrollGrace = 0D;
-            this.zedGraphControl1.ScrollMaxX = 100D;
-            this.zedGraphControl1.ScrollMaxY = 100D;
-            this.zedGraphControl1.ScrollMaxY2 = 50D;
-            this.zedGraphControl1.ScrollMinX = 0D;
-            this.zedGraphControl1.ScrollMinY = 0D;
-            this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(769, 374);
-            this.zedGraphControl1.TabIndex = 129;
             // 
             // panel1
             // 
@@ -774,20 +699,20 @@
             this.panel1.Controls.Add(this.checkBox5);
             this.panel1.Controls.Add(this.checkBox8);
             this.panel1.Controls.Add(this.checkBox4);
-            this.panel1.Location = new System.Drawing.Point(6, 381);
+            this.panel1.Location = new System.Drawing.Point(2, 393);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(772, 42);
+            this.panel1.Size = new System.Drawing.Size(674, 34);
             this.panel1.TabIndex = 185;
             // 
             // checkBox3
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox3.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox3.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox3.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox3.Location = new System.Drawing.Point(206, 11);
+            this.checkBox3.Location = new System.Drawing.Point(178, 11);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(63, 22);
+            this.checkBox3.Size = new System.Drawing.Size(48, 16);
             this.checkBox3.TabIndex = 178;
             this.checkBox3.Text = "-CH3";
             this.checkBox3.UseVisualStyleBackColor = false;
@@ -796,11 +721,11 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox1.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox1.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox1.ForeColor = System.Drawing.Color.Blue;
             this.checkBox1.Location = new System.Drawing.Point(8, 11);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(63, 22);
+            this.checkBox1.Size = new System.Drawing.Size(48, 16);
             this.checkBox1.TabIndex = 176;
             this.checkBox1.Text = "-CH1";
             this.checkBox1.UseVisualStyleBackColor = false;
@@ -809,11 +734,11 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox2.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox2.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox2.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox2.Location = new System.Drawing.Point(107, 11);
+            this.checkBox2.Location = new System.Drawing.Point(93, 11);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(63, 22);
+            this.checkBox2.Size = new System.Drawing.Size(48, 16);
             this.checkBox2.TabIndex = 177;
             this.checkBox2.Text = "-CH2";
             this.checkBox2.UseVisualStyleBackColor = false;
@@ -822,11 +747,11 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox6.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox6.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox6.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox6.Location = new System.Drawing.Point(503, 11);
+            this.checkBox6.Location = new System.Drawing.Point(433, 11);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(63, 22);
+            this.checkBox6.Size = new System.Drawing.Size(48, 16);
             this.checkBox6.TabIndex = 179;
             this.checkBox6.Text = "-CH6";
             this.checkBox6.UseVisualStyleBackColor = false;
@@ -835,11 +760,11 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox7.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox7.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox7.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox7.Location = new System.Drawing.Point(602, 11);
+            this.checkBox7.Location = new System.Drawing.Point(518, 11);
             this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(63, 22);
+            this.checkBox7.Size = new System.Drawing.Size(48, 16);
             this.checkBox7.TabIndex = 184;
             this.checkBox7.Text = "-CH7";
             this.checkBox7.UseVisualStyleBackColor = false;
@@ -848,11 +773,11 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox5.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox5.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox5.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox5.Location = new System.Drawing.Point(404, 11);
+            this.checkBox5.Location = new System.Drawing.Point(348, 11);
             this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(63, 22);
+            this.checkBox5.Size = new System.Drawing.Size(48, 16);
             this.checkBox5.TabIndex = 180;
             this.checkBox5.Text = "-CH5";
             this.checkBox5.UseVisualStyleBackColor = false;
@@ -861,11 +786,11 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox8.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox8.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox8.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox8.Location = new System.Drawing.Point(701, 11);
+            this.checkBox8.Location = new System.Drawing.Point(603, 11);
             this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(63, 22);
+            this.checkBox8.Size = new System.Drawing.Size(48, 16);
             this.checkBox8.TabIndex = 183;
             this.checkBox8.Text = "-CH8";
             this.checkBox8.UseVisualStyleBackColor = false;
@@ -874,14 +799,60 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.BackColor = System.Drawing.Color.Transparent;
-            this.checkBox4.Font = new System.Drawing.Font("宋体", 13F);
+            this.checkBox4.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox4.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox4.Location = new System.Drawing.Point(305, 11);
+            this.checkBox4.Location = new System.Drawing.Point(263, 11);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(63, 22);
+            this.checkBox4.Size = new System.Drawing.Size(48, 16);
             this.checkBox4.TabIndex = 181;
             this.checkBox4.Text = "-CH4";
             this.checkBox4.UseVisualStyleBackColor = false;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.ForeColor = System.Drawing.Color.Red;
+            this.button4.Location = new System.Drawing.Point(578, 122);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(60, 68);
+            this.button4.TabIndex = 173;
+            this.button4.Text = "设定";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox3.Location = new System.Drawing.Point(578, 52);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(81, 29);
+            this.textBox3.TabIndex = 170;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("宋体", 14F);
+            this.textBox4.Location = new System.Drawing.Point(578, 87);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(81, 29);
+            this.textBox4.TabIndex = 172;
+            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
+            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 100D;
+            this.zedGraphControl1.ScrollMaxY = 100D;
+            this.zedGraphControl1.ScrollMaxY2 = 50D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(680, 401);
+            this.zedGraphControl1.TabIndex = 129;
             // 
             // label9
             // 
@@ -917,52 +888,21 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(807, 428);
+            this.tabPage1.Size = new System.Drawing.Size(704, 433);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "第一页";
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 10;
-            this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(797, 418);
-            this.dataGridView1.TabIndex = 155;
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(80, 25);
             this.tabControl1.Location = new System.Drawing.Point(386, 142);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(815, 461);
+            this.tabControl1.Size = new System.Drawing.Size(712, 466);
             this.tabControl1.TabIndex = 188;
             // 
             // statusStrip1
@@ -985,10 +925,42 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
+            this.dataGridView1.RowHeadersWidth = 10;
+            this.dataGridView1.RowTemplate.Height = 23;
+            this.dataGridView1.Size = new System.Drawing.Size(694, 423);
+            this.dataGridView1.TabIndex = 155;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CaptionBackColorBottom = System.Drawing.Color.Turquoise;
+            this.CaptionBackColorTop = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1205, 637);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.groupBox1);
@@ -1005,18 +977,16 @@
             this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            this.tabPage3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1062,7 +1032,6 @@
         private System.Windows.Forms.Timer dataTimer;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
-        private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox3;
@@ -1080,7 +1049,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
@@ -1088,9 +1056,11 @@
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
         private System.Windows.Forms.ToolStripButton toolStripButton4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ToolStripButton toolStripButton5;
         private System.Windows.Forms.ToolStripButton toolStripButton6;
+        private System.Windows.Forms.ToolStripMenuItem 保存ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

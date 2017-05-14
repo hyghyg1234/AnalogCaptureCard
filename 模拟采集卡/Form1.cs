@@ -114,8 +114,8 @@ namespace 模拟采集卡
         #region
         private void datagridview_Init()
         {
-            dataGridView1.RowHeadersWidth = 18;
-            dataGridView1.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;           
+            dataGridView1.ReadOnly = true;      //禁止编辑
             dataGridView1.AllowUserToResizeRows = false;//行大小不能调整
             dataGridView1.AllowUserToResizeColumns = false;//行大小不能调整
             //dataGridView1.RowHeadersVisible = false;//行标题隐藏                    
@@ -149,6 +149,11 @@ namespace 模拟采集卡
             m_GradeTable.Columns.Add("CH7", typeof(string));
             m_GradeTable.Columns.Add("CH8", typeof(string));
             dataGridView1.DataSource = m_GradeTable;
+            //禁止排序
+            for (int i = 0; i < this.dataGridView1.Columns.Count; i++)
+            {
+                this.dataGridView1.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
+            }
             dataGridView1.Columns[0].DefaultCellStyle.ForeColor = lbDigitalMeter1.ForeColor;
             dataGridView1.Columns[1].DefaultCellStyle.ForeColor = lbDigitalMeter2.ForeColor;
             dataGridView1.Columns[2].DefaultCellStyle.ForeColor = lbDigitalMeter3.ForeColor;
@@ -577,6 +582,41 @@ namespace 模拟采集卡
             //}
             m_GradeTable.Clear();
             toolStripStatusLabel1.Text = "0行";
+        }
+        private void 保存ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog FileSave = new SaveFileDialog();
+            FileSave.Title = "保存EXECL文件";
+            FileSave.Filter = "CSV文件(*.csv) |*.csv | 所有文件(*.*) |*.*";
+            FileSave.FilterIndex = 1;
+            if (FileSave.ShowDialog() == DialogResult.OK)
+            {
+                string FileName = FileSave.FileName;
+                if (File.Exists(FileName))
+                {
+                    File.Delete(FileName);
+                }
+                csvHelper.DataTableToCSV(m_GradeTable, FileName);
+                MessageBox.Show(this, "保存CSV成功", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void 打开ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "CSV文件|*.CSV";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                string fileName = openFileDialog1.FileName;
+                System.Data.DataTable newDataTable;
+                newDataTable = csvHelper.CSVToDataTable(fileName);
+                m_GradeTable.Clear();    
+                foreach (DataRow row in newDataTable.Rows)
+                {
+                    m_GradeTable.ImportRow(row);
+                }
+                toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
+                MessageBox.Show("成功显示CSV数据！");
+            }
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
