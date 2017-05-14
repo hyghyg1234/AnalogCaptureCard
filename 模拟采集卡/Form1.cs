@@ -121,7 +121,7 @@ namespace 模拟采集卡
             //dataGridView1.RowHeadersVisible = false;//行标题隐藏                    
             dataGridView1.DefaultCellStyle.BackColor = Color.Black;
             //dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
-            dataGridView1.DefaultCellStyle.Font = new System.Drawing.Font("宋体", 13F);
+            dataGridView1.DefaultCellStyle.Font = new System.Drawing.Font("宋体", 12F);
                  
             //dataGridView1添加
             //for (int i = 0; i < 20; i++)

@@ -95,11 +95,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
@@ -107,9 +107,9 @@
             this.tabPage2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -141,18 +141,17 @@
             this.groupBox2.Font = new System.Drawing.Font("宋体", 15F);
             this.groupBox2.Location = new System.Drawing.Point(11, 142);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 461);
+            this.groupBox2.Size = new System.Drawing.Size(340, 462);
             this.groupBox2.TabIndex = 169;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "8路模拟量";
             // 
             // lbDigitalMeter8
             // 
-            this.lbDigitalMeter8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter8.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter8.ForeColor = System.Drawing.Color.Aqua;
             this.lbDigitalMeter8.Format = "00.00000";
-            this.lbDigitalMeter8.Location = new System.Drawing.Point(98, 393);
+            this.lbDigitalMeter8.Location = new System.Drawing.Point(91, 407);
             this.lbDigitalMeter8.Name = "lbDigitalMeter8";
             this.lbDigitalMeter8.Renderer = null;
             this.lbDigitalMeter8.Signed = false;
@@ -166,7 +165,7 @@
             this.label14.BackColor = System.Drawing.Color.Transparent;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.ForeColor = System.Drawing.Color.Aqua;
-            this.label14.Location = new System.Drawing.Point(298, 393);
+            this.label14.Location = new System.Drawing.Point(288, 408);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(47, 46);
             this.label14.TabIndex = 217;
@@ -178,7 +177,7 @@
             this.label15.BackColor = System.Drawing.Color.Transparent;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Firebrick;
-            this.label15.Location = new System.Drawing.Point(13, 401);
+            this.label15.Location = new System.Drawing.Point(6, 415);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(81, 37);
             this.label15.TabIndex = 218;
@@ -186,11 +185,10 @@
             // 
             // lbDigitalMeter7
             // 
-            this.lbDigitalMeter7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter7.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter7.ForeColor = System.Drawing.Color.Yellow;
             this.lbDigitalMeter7.Format = "00.00000";
-            this.lbDigitalMeter7.Location = new System.Drawing.Point(98, 341);
+            this.lbDigitalMeter7.Location = new System.Drawing.Point(91, 353);
             this.lbDigitalMeter7.Name = "lbDigitalMeter7";
             this.lbDigitalMeter7.Renderer = null;
             this.lbDigitalMeter7.Signed = false;
@@ -204,7 +202,7 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label16.ForeColor = System.Drawing.Color.Yellow;
-            this.label16.Location = new System.Drawing.Point(298, 341);
+            this.label16.Location = new System.Drawing.Point(288, 354);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(47, 46);
             this.label16.TabIndex = 214;
@@ -216,7 +214,7 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Firebrick;
-            this.label17.Location = new System.Drawing.Point(13, 349);
+            this.label17.Location = new System.Drawing.Point(6, 361);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(81, 37);
             this.label17.TabIndex = 215;
@@ -224,11 +222,10 @@
             // 
             // lbDigitalMeter6
             // 
-            this.lbDigitalMeter6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter6.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter6.ForeColor = System.Drawing.Color.Violet;
             this.lbDigitalMeter6.Format = "00.00000";
-            this.lbDigitalMeter6.Location = new System.Drawing.Point(98, 289);
+            this.lbDigitalMeter6.Location = new System.Drawing.Point(91, 299);
             this.lbDigitalMeter6.Name = "lbDigitalMeter6";
             this.lbDigitalMeter6.Renderer = null;
             this.lbDigitalMeter6.Signed = false;
@@ -242,7 +239,7 @@
             this.label18.BackColor = System.Drawing.Color.Transparent;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label18.ForeColor = System.Drawing.Color.Violet;
-            this.label18.Location = new System.Drawing.Point(298, 289);
+            this.label18.Location = new System.Drawing.Point(288, 300);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(47, 46);
             this.label18.TabIndex = 211;
@@ -254,7 +251,7 @@
             this.label19.BackColor = System.Drawing.Color.Transparent;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Firebrick;
-            this.label19.Location = new System.Drawing.Point(13, 297);
+            this.label19.Location = new System.Drawing.Point(6, 307);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(81, 37);
             this.label19.TabIndex = 212;
@@ -262,11 +259,10 @@
             // 
             // lbDigitalMeter5
             // 
-            this.lbDigitalMeter5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter5.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter5.ForeColor = System.Drawing.Color.Turquoise;
             this.lbDigitalMeter5.Format = "00.00000";
-            this.lbDigitalMeter5.Location = new System.Drawing.Point(98, 237);
+            this.lbDigitalMeter5.Location = new System.Drawing.Point(91, 245);
             this.lbDigitalMeter5.Name = "lbDigitalMeter5";
             this.lbDigitalMeter5.Renderer = null;
             this.lbDigitalMeter5.Signed = false;
@@ -280,7 +276,7 @@
             this.label20.BackColor = System.Drawing.Color.Transparent;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label20.ForeColor = System.Drawing.Color.Turquoise;
-            this.label20.Location = new System.Drawing.Point(298, 237);
+            this.label20.Location = new System.Drawing.Point(288, 246);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(47, 46);
             this.label20.TabIndex = 208;
@@ -292,7 +288,7 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Firebrick;
-            this.label21.Location = new System.Drawing.Point(13, 245);
+            this.label21.Location = new System.Drawing.Point(6, 253);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(81, 37);
             this.label21.TabIndex = 209;
@@ -300,11 +296,10 @@
             // 
             // lbDigitalMeter4
             // 
-            this.lbDigitalMeter4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter4.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter4.ForeColor = System.Drawing.Color.Tomato;
             this.lbDigitalMeter4.Format = "00.00000";
-            this.lbDigitalMeter4.Location = new System.Drawing.Point(98, 185);
+            this.lbDigitalMeter4.Location = new System.Drawing.Point(91, 191);
             this.lbDigitalMeter4.Name = "lbDigitalMeter4";
             this.lbDigitalMeter4.Renderer = null;
             this.lbDigitalMeter4.Signed = false;
@@ -318,7 +313,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.ForeColor = System.Drawing.Color.Tomato;
-            this.label10.Location = new System.Drawing.Point(298, 185);
+            this.label10.Location = new System.Drawing.Point(288, 192);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(47, 46);
             this.label10.TabIndex = 205;
@@ -330,7 +325,7 @@
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Firebrick;
-            this.label11.Location = new System.Drawing.Point(13, 193);
+            this.label11.Location = new System.Drawing.Point(6, 199);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 37);
             this.label11.TabIndex = 206;
@@ -338,11 +333,10 @@
             // 
             // lbDigitalMeter3
             // 
-            this.lbDigitalMeter3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter3.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter3.ForeColor = System.Drawing.Color.SpringGreen;
             this.lbDigitalMeter3.Format = "00.00000";
-            this.lbDigitalMeter3.Location = new System.Drawing.Point(98, 133);
+            this.lbDigitalMeter3.Location = new System.Drawing.Point(91, 137);
             this.lbDigitalMeter3.Name = "lbDigitalMeter3";
             this.lbDigitalMeter3.Renderer = null;
             this.lbDigitalMeter3.Signed = false;
@@ -356,7 +350,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label12.ForeColor = System.Drawing.Color.SpringGreen;
-            this.label12.Location = new System.Drawing.Point(298, 133);
+            this.label12.Location = new System.Drawing.Point(288, 138);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(47, 46);
             this.label12.TabIndex = 202;
@@ -368,7 +362,7 @@
             this.label13.BackColor = System.Drawing.Color.Transparent;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Firebrick;
-            this.label13.Location = new System.Drawing.Point(13, 141);
+            this.label13.Location = new System.Drawing.Point(6, 145);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(81, 37);
             this.label13.TabIndex = 203;
@@ -376,11 +370,10 @@
             // 
             // lbDigitalMeter2
             // 
-            this.lbDigitalMeter2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter2.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter2.ForeColor = System.Drawing.Color.SlateBlue;
             this.lbDigitalMeter2.Format = "00.00000";
-            this.lbDigitalMeter2.Location = new System.Drawing.Point(98, 81);
+            this.lbDigitalMeter2.Location = new System.Drawing.Point(91, 83);
             this.lbDigitalMeter2.Name = "lbDigitalMeter2";
             this.lbDigitalMeter2.Renderer = null;
             this.lbDigitalMeter2.Signed = false;
@@ -394,7 +387,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.ForeColor = System.Drawing.Color.SlateBlue;
-            this.label2.Location = new System.Drawing.Point(298, 81);
+            this.label2.Location = new System.Drawing.Point(288, 84);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 46);
             this.label2.TabIndex = 199;
@@ -406,7 +399,7 @@
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Firebrick;
-            this.label7.Location = new System.Drawing.Point(13, 89);
+            this.label7.Location = new System.Drawing.Point(6, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 37);
             this.label7.TabIndex = 200;
@@ -414,11 +407,10 @@
             // 
             // lbDigitalMeter1
             // 
-            this.lbDigitalMeter1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbDigitalMeter1.BackColor = System.Drawing.Color.Black;
             this.lbDigitalMeter1.ForeColor = System.Drawing.Color.SkyBlue;
             this.lbDigitalMeter1.Format = "00.00000";
-            this.lbDigitalMeter1.Location = new System.Drawing.Point(98, 29);
+            this.lbDigitalMeter1.Location = new System.Drawing.Point(91, 29);
             this.lbDigitalMeter1.Name = "lbDigitalMeter1";
             this.lbDigitalMeter1.Renderer = null;
             this.lbDigitalMeter1.Signed = false;
@@ -432,7 +424,7 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.ForeColor = System.Drawing.Color.SkyBlue;
-            this.label1.Location = new System.Drawing.Point(298, 29);
+            this.label1.Location = new System.Drawing.Point(288, 30);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(47, 46);
             this.label1.TabIndex = 196;
@@ -444,7 +436,7 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Firebrick;
-            this.label6.Location = new System.Drawing.Point(13, 37);
+            this.label6.Location = new System.Drawing.Point(6, 37);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(79, 37);
             this.label6.TabIndex = 197;
@@ -460,7 +452,7 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(564, 35);
+            this.groupBox1.Location = new System.Drawing.Point(516, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(364, 138);
             this.groupBox1.TabIndex = 176;
@@ -675,16 +667,13 @@
             // 
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage2.Controls.Add(this.panel1);
-            this.tabPage2.Controls.Add(this.button4);
-            this.tabPage2.Controls.Add(this.textBox3);
-            this.tabPage2.Controls.Add(this.textBox4);
             this.tabPage2.Controls.Add(this.zedGraphControl1);
             this.tabPage2.Controls.Add(this.label9);
             this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(704, 433);
+            this.tabPage2.Size = new System.Drawing.Size(648, 433);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "第二页";
             // 
@@ -701,7 +690,7 @@
             this.panel1.Controls.Add(this.checkBox4);
             this.panel1.Location = new System.Drawing.Point(2, 393);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(674, 34);
+            this.panel1.Size = new System.Drawing.Size(636, 34);
             this.panel1.TabIndex = 185;
             // 
             // checkBox3
@@ -710,7 +699,7 @@
             this.checkBox3.BackColor = System.Drawing.Color.Transparent;
             this.checkBox3.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox3.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox3.Location = new System.Drawing.Point(178, 11);
+            this.checkBox3.Location = new System.Drawing.Point(170, 11);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(48, 16);
             this.checkBox3.TabIndex = 178;
@@ -736,7 +725,7 @@
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
             this.checkBox2.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox2.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox2.Location = new System.Drawing.Point(93, 11);
+            this.checkBox2.Location = new System.Drawing.Point(89, 11);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(48, 16);
             this.checkBox2.TabIndex = 177;
@@ -749,7 +738,7 @@
             this.checkBox6.BackColor = System.Drawing.Color.Transparent;
             this.checkBox6.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox6.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox6.Location = new System.Drawing.Point(433, 11);
+            this.checkBox6.Location = new System.Drawing.Point(413, 11);
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(48, 16);
             this.checkBox6.TabIndex = 179;
@@ -762,7 +751,7 @@
             this.checkBox7.BackColor = System.Drawing.Color.Transparent;
             this.checkBox7.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox7.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox7.Location = new System.Drawing.Point(518, 11);
+            this.checkBox7.Location = new System.Drawing.Point(494, 11);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(48, 16);
             this.checkBox7.TabIndex = 184;
@@ -775,7 +764,7 @@
             this.checkBox5.BackColor = System.Drawing.Color.Transparent;
             this.checkBox5.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox5.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox5.Location = new System.Drawing.Point(348, 11);
+            this.checkBox5.Location = new System.Drawing.Point(332, 11);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(48, 16);
             this.checkBox5.TabIndex = 180;
@@ -788,7 +777,7 @@
             this.checkBox8.BackColor = System.Drawing.Color.Transparent;
             this.checkBox8.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox8.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox8.Location = new System.Drawing.Point(603, 11);
+            this.checkBox8.Location = new System.Drawing.Point(575, 11);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(48, 16);
             this.checkBox8.TabIndex = 183;
@@ -801,7 +790,7 @@
             this.checkBox4.BackColor = System.Drawing.Color.Transparent;
             this.checkBox4.Font = new System.Drawing.Font("宋体", 9F);
             this.checkBox4.ForeColor = System.Drawing.Color.Blue;
-            this.checkBox4.Location = new System.Drawing.Point(263, 11);
+            this.checkBox4.Location = new System.Drawing.Point(251, 11);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(48, 16);
             this.checkBox4.TabIndex = 181;
@@ -812,9 +801,9 @@
             // 
             this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(578, 122);
+            this.button4.Location = new System.Drawing.Point(924, 111);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 68);
+            this.button4.Size = new System.Drawing.Size(60, 46);
             this.button4.TabIndex = 173;
             this.button4.Text = "设定";
             this.button4.UseVisualStyleBackColor = true;
@@ -823,7 +812,7 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox3.Location = new System.Drawing.Point(578, 52);
+            this.textBox3.Location = new System.Drawing.Point(924, 41);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(81, 29);
             this.textBox3.TabIndex = 170;
@@ -832,7 +821,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox4.Location = new System.Drawing.Point(578, 87);
+            this.textBox4.Location = new System.Drawing.Point(924, 76);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(81, 29);
             this.textBox4.TabIndex = 172;
@@ -851,7 +840,7 @@
             this.zedGraphControl1.ScrollMinX = 0D;
             this.zedGraphControl1.ScrollMinY = 0D;
             this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(680, 401);
+            this.zedGraphControl1.Size = new System.Drawing.Size(638, 398);
             this.zedGraphControl1.TabIndex = 129;
             // 
             // label9
@@ -888,42 +877,9 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(704, 433);
+            this.tabPage1.Size = new System.Drawing.Size(648, 433);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "第一页";
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tabControl1.HotTrack = true;
-            this.tabControl1.ItemSize = new System.Drawing.Size(80, 25);
-            this.tabControl1.Location = new System.Drawing.Point(386, 142);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(712, 466);
-            this.tabControl1.TabIndex = 188;
-            // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(4, 611);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1197, 22);
-            this.statusStrip1.TabIndex = 189;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(27, 17);
-            this.toolStripStatusLabel1.Text = "0行";
-            // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // dataGridView1
             // 
@@ -952,8 +908,41 @@
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.RowHeadersWidth = 10;
             this.dataGridView1.RowTemplate.Height = 23;
-            this.dataGridView1.Size = new System.Drawing.Size(694, 423);
+            this.dataGridView1.Size = new System.Drawing.Size(638, 423);
             this.dataGridView1.TabIndex = 155;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tabControl1.HotTrack = true;
+            this.tabControl1.ItemSize = new System.Drawing.Size(80, 25);
+            this.tabControl1.Location = new System.Drawing.Point(357, 142);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(656, 466);
+            this.tabControl1.TabIndex = 188;
+            // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripStatusLabel1});
+            this.statusStrip1.Location = new System.Drawing.Point(4, 611);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(1013, 22);
+            this.statusStrip1.TabIndex = 189;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // toolStripStatusLabel1
+            // 
+            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(27, 17);
+            this.toolStripStatusLabel1.Text = "0行";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // Form1
             // 
@@ -961,8 +950,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CaptionBackColorBottom = System.Drawing.Color.Turquoise;
             this.CaptionBackColorTop = System.Drawing.Color.PowderBlue;
-            this.ClientSize = new System.Drawing.Size(1205, 637);
+            this.ClientSize = new System.Drawing.Size(1021, 637);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.toolStrip1);
@@ -983,10 +975,10 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.tabControl1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
