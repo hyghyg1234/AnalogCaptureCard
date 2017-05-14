@@ -130,6 +130,12 @@
   <ItemGroup>
     <None Include="Resources\usb_48.571428571429px_1202485_easyicon.net.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open_file_48px_1187339_easyicon.net.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close_48px_1142186_easyicon.net.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -380,11 +380,6 @@ namespace 模拟采集卡
             init_zedgragh();
         }
 
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            SerialThread.Abort();
-        }
-
         //刷新数据的事件
         #region
         int x = 0;  //用来抛弃前几个数据
@@ -576,11 +571,30 @@ namespace 模拟采集卡
         //右击清除
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            while (dataGridView1.RowCount > 1)
+            //while (dataGridView1.RowCount > 1)
+            //{
+            //    m_GradeTable.Rows[0].Delete();
+            //}
+            m_GradeTable.Clear();
+            toolStripStatusLabel1.Text = "0行";
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "CSV文件|*.CSV";
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                m_GradeTable.Rows[0].Delete();
+                string fileName = openFileDialog1.FileName;
+                System.Data.DataTable newDataTable;
+                newDataTable = csvHelper.CSVToDataTable(fileName);
+                m_GradeTable.Clear();
+                foreach (DataRow row in newDataTable.Rows)
+                {
+                    m_GradeTable.ImportRow(row);
+                }
+                toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
+                MessageBox.Show("成功显示CSV数据！");
             }
-            toolStripStatusLabel1.Text = (dataGridView1.RowCount - 1).ToString() + "行";
         }
 
         private void toolStripButton2_Click(object sender, EventArgs e)
@@ -601,20 +615,21 @@ namespace 模拟采集卡
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        //关闭程序
+        private void Close_Form1()
         {
-            openFileDialog1.Filter = "CSV文件|*.CSV";
-            if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
-            {
-                return;
-            }
-            else
-            {
-                this.dataGridView2.DataSource = null;
-                string fileName = openFileDialog1.FileName;
-                this.dataGridView2.DataSource = csvHelper.CSVToDataTable(fileName);
-                MessageBox.Show("成功显示CSV数据！");
-            }
+            SerialThread.Abort();          
         }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Close_Form1();
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            Close_Form1();
+            this.Close();
+        }       
     }
 }
