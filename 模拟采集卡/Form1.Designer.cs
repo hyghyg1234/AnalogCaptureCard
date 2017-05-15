@@ -57,14 +57,12 @@
             this.lbDigitalMeter1 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button14 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.curveTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -88,20 +86,19 @@
             this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -392,6 +389,7 @@
             this.label2.Size = new System.Drawing.Size(47, 46);
             this.label2.TabIndex = 199;
             this.label2.Text = "V";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label7
             // 
@@ -429,6 +427,7 @@
             this.label1.Size = new System.Drawing.Size(47, 46);
             this.label1.TabIndex = 196;
             this.label1.Text = "V";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label6
             // 
@@ -442,32 +441,14 @@
             this.label6.TabIndex = 197;
             this.label6.Text = "CH1";
             // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.button14);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.label22);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Font = new System.Drawing.Font("宋体", 15F);
-            this.groupBox1.Location = new System.Drawing.Point(516, 41);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 138);
-            this.groupBox1.TabIndex = 176;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "设置";
-            this.groupBox1.Visible = false;
-            // 
             // button14
             // 
             this.button14.Font = new System.Drawing.Font("宋体", 12F);
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(276, 56);
+            this.button14.Location = new System.Drawing.Point(798, 109);
             this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(82, 43);
+            this.button14.Size = new System.Drawing.Size(74, 39);
             this.button14.TabIndex = 132;
             this.button14.Text = "确定";
             this.button14.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -476,57 +457,49 @@
             // 
             // textBox6
             // 
-            this.textBox6.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox6.Location = new System.Drawing.Point(145, 100);
+            this.textBox6.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox6.Location = new System.Drawing.Point(697, 122);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(112, 29);
+            this.textBox6.Size = new System.Drawing.Size(76, 26);
             this.textBox6.TabIndex = 27;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label22.Location = new System.Drawing.Point(10, 103);
+            this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label22.Location = new System.Drawing.Point(572, 128);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(133, 19);
+            this.label22.Size = new System.Drawing.Size(119, 16);
             this.label22.TabIndex = 26;
             this.label22.Text = "刷新时间（S）";
             // 
             // textBox2
             // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox2.Location = new System.Drawing.Point(145, 65);
+            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox2.Location = new System.Drawing.Point(697, 90);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 29);
+            this.textBox2.Size = new System.Drawing.Size(76, 26);
             this.textBox2.TabIndex = 25;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label3.Location = new System.Drawing.Point(10, 68);
+            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(572, 93);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 19);
+            this.label3.Size = new System.Drawing.Size(119, 16);
             this.label3.TabIndex = 24;
             this.label3.Text = "曲线时间（S）";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label4.Location = new System.Drawing.Point(10, 33);
+            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(572, 58);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 19);
+            this.label4.Size = new System.Drawing.Size(119, 16);
             this.label4.TabIndex = 23;
             this.label4.Text = "存储时间（S）";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox1.Location = new System.Drawing.Point(145, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 29);
-            this.textBox1.TabIndex = 22;
             // 
             // curveTimer
             // 
@@ -547,7 +520,7 @@
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(7, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(703, 86);
+            this.toolStrip1.Size = new System.Drawing.Size(506, 86);
             this.toolStrip1.TabIndex = 186;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -668,14 +641,12 @@
             this.tabPage2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPage2.Controls.Add(this.panel1);
             this.tabPage2.Controls.Add(this.zedGraphControl1);
-            this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.label8);
             this.tabPage2.Location = new System.Drawing.Point(4, 29);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(648, 433);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "第二页";
+            this.tabPage2.Text = "曲线";
             // 
             // panel1
             // 
@@ -797,6 +768,22 @@
             this.checkBox4.Text = "-CH4";
             this.checkBox4.UseVisualStyleBackColor = false;
             // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
+            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 100D;
+            this.zedGraphControl1.ScrollMaxY = 100D;
+            this.zedGraphControl1.ScrollMaxY2 = 50D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(638, 398);
+            this.zedGraphControl1.TabIndex = 129;
+            // 
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -827,46 +814,6 @@
             this.textBox4.TabIndex = 172;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // zedGraphControl1
-            // 
-            this.zedGraphControl1.BackColor = System.Drawing.Color.Transparent;
-            this.zedGraphControl1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.zedGraphControl1.Location = new System.Drawing.Point(0, 0);
-            this.zedGraphControl1.Name = "zedGraphControl1";
-            this.zedGraphControl1.ScrollGrace = 0D;
-            this.zedGraphControl1.ScrollMaxX = 100D;
-            this.zedGraphControl1.ScrollMaxY = 100D;
-            this.zedGraphControl1.ScrollMaxY2 = 50D;
-            this.zedGraphControl1.ScrollMinX = 0D;
-            this.zedGraphControl1.ScrollMinY = 0D;
-            this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(638, 398);
-            this.zedGraphControl1.TabIndex = 129;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label9.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(381, 193);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(66, 19);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "最大值";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.HotTrack;
-            this.label8.Font = new System.Drawing.Font("宋体", 14.25F);
-            this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(364, 229);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 19);
-            this.label8.TabIndex = 171;
-            this.label8.Text = "最小值";
-            // 
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.Transparent;
@@ -879,7 +826,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(648, 433);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "第一页";
+            this.tabPage1.Text = "数据";
             // 
             // dataGridView1
             // 
@@ -913,8 +860,8 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabControl1.HotTrack = true;
             this.tabControl1.ItemSize = new System.Drawing.Size(80, 25);
@@ -944,6 +891,14 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox1.Location = new System.Drawing.Point(697, 55);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(76, 26);
+            this.textBox1.TabIndex = 22;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -951,27 +906,30 @@
             this.CaptionBackColorBottom = System.Drawing.Color.Turquoise;
             this.CaptionBackColorTop = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1021, 637);
+            this.Controls.Add(this.button14);
             this.Controls.Add(this.button4);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.statusStrip1);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
             this.Text = "V1";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.contextMenuStrip1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tabPage1.ResumeLayout(false);
@@ -1014,13 +972,11 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripButton toolStripButton2;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Timer dataTimer;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
@@ -1038,8 +994,6 @@
         private System.Windows.Forms.CheckBox checkBox5;
         private System.Windows.Forms.CheckBox checkBox8;
         private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
@@ -1053,6 +1007,8 @@
         private System.Windows.Forms.ToolStripMenuItem 保存ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

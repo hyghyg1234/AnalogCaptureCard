@@ -34,8 +34,13 @@ namespace 模拟采集卡
         serial serial = new serial();
         CSVHelper csvHelper = new CSVHelper();
 
-        List<System.Windows.Forms.CheckBox> CheckItem = new List<System.Windows.Forms.CheckBox>();     
-        private void CheckItem_Add()
+        List<System.Windows.Forms.CheckBox> CheckItem = new List<System.Windows.Forms.CheckBox>();
+        List<LBSoft.IndustrialCtrls.Meters.LBDigitalMeter> MeterList = new List<LBSoft.IndustrialCtrls.Meters.LBDigitalMeter>();
+        List<System.Windows.Forms.Label> LabelList = new List<System.Windows.Forms.Label>();
+
+        //list项目添加
+        #region
+        private void List_Item_Add()
         {
             CheckItem.Add(checkBox1);
             CheckItem.Add(checkBox2);
@@ -45,7 +50,24 @@ namespace 模拟采集卡
             CheckItem.Add(checkBox6);
             CheckItem.Add(checkBox7);
             CheckItem.Add(checkBox8);
-        } 
+            MeterList.Add(lbDigitalMeter1);
+            MeterList.Add(lbDigitalMeter2);
+            MeterList.Add(lbDigitalMeter3);
+            MeterList.Add(lbDigitalMeter4);
+            MeterList.Add(lbDigitalMeter5);
+            MeterList.Add(lbDigitalMeter6);
+            MeterList.Add(lbDigitalMeter7);
+            MeterList.Add(lbDigitalMeter8);
+            LabelList.Add(label1);
+            LabelList.Add(label2);
+            LabelList.Add(label12);
+            LabelList.Add(label10);
+            LabelList.Add(label20);
+            LabelList.Add(label18);
+            LabelList.Add(label16);
+            LabelList.Add(label14);
+        }        
+        #endregion
 
         //曲线初始化
         #region
@@ -57,10 +79,10 @@ namespace 模拟采集卡
 
             zedGraphControl1.IsShowHScrollBar = true;
             mGraphPane = zedGraphControl1.GraphPane;
-            mGraphPane.Title.Text = "压力数据";
+            mGraphPane.Title.Text = "模拟采集曲线";
             //添加两个Y轴，分别显示电压、电流
             mGraphPane.XAxis.Title.Text = "时间";
-            mGraphPane.YAxis.Title.Text = "压力值";
+            mGraphPane.YAxis.Title.Text = "电压值";
 
 
             mGraphPane.Y2Axis.IsVisible = false;
@@ -104,7 +126,6 @@ namespace 模拟采集卡
             for (int i = 0; i < 8; i++)
             {
                 lists[i] = new RollingPointPairList(chartPoint);
-
                 LineItem myCurve = mGraphPane.AddCurve("", lists[i], CheckItem[i].ForeColor, SymbolType.None);
             }
         }
@@ -177,8 +198,18 @@ namespace 模拟采集卡
         }
         #endregion
 
+        //颜色初始化
+        private void Color_Set()
+        {
+            for (int i = 0; i < 8; i++)
+            {
+                MeterList[i].ForeColor = LabelList[i].ForeColor;
+                CheckItem[i].ForeColor = MeterList[i].ForeColor;
+            }
+        }
+
         private void Form1_Load(object sender, EventArgs e)
-        {           
+        {
             datagridview_Init();//datagridview初始化
             parameter_Init();   //参数初始化
             BindData();         //数据绑定到表格
@@ -195,20 +226,10 @@ namespace 模拟采集卡
                 {
                     CheckArray[i] = 0;
                 }
-            }          
-            //颜色初始化
-            CheckItem_Add();
-            CheckItem[0].ForeColor = lbDigitalMeter1.ForeColor;
-            CheckItem[1].ForeColor = lbDigitalMeter2.ForeColor;
-            CheckItem[2].ForeColor = lbDigitalMeter3.ForeColor;
-            CheckItem[3].ForeColor = lbDigitalMeter4.ForeColor;
-            CheckItem[4].ForeColor = lbDigitalMeter5.ForeColor;
-            CheckItem[5].ForeColor = lbDigitalMeter6.ForeColor;
-            CheckItem[6].ForeColor = lbDigitalMeter7.ForeColor;
-            CheckItem[7].ForeColor = lbDigitalMeter8.ForeColor;
-
-            init_zedgragh();    //曲线初始化
-            
+            }
+            List_Item_Add();
+            Color_Set();    //颜色设置
+            init_zedgragh();    //曲线初始化           
             try
             {
                 zedGraph_time = Convert.ToDouble(Properties.Settings.Default.ZedGraph_time);
@@ -299,7 +320,7 @@ namespace 模拟采集卡
             }
             if (CheckItem[0].Checked)
             {
-                pLists[0].Add(time, Convert.ToDouble(lbDigitalMeter1.Value));
+                pLists[0].Add(time, Convert.ToDouble(lbDigitalMeter1.Value));        
             }
             if (CheckItem[1].Checked)
             {
@@ -495,41 +516,24 @@ namespace 模拟采集卡
 
         private void button14_Click(object sender, EventArgs e)
         {
-            //if (serial.serialPort1.IsOpen)
-            //{
-            //    serial.serialPort1.Close();
-            //}
-
-            //Properties.Settings.Default.PortName = comboBox1.Text;
             //Properties.Settings.Default.CsvTime = textBox1.Text;
-            //Properties.Settings.Default.ZedGraph_time = textBox2.Text;
-            //Properties.Settings.Default.RefreshTime = textBox6.Text;
-            //Properties.Settings.Default.Save();
+            Properties.Settings.Default.ZedGraph_time = textBox2.Text;
+            Properties.Settings.Default.RefreshTime = textBox6.Text;
+            Properties.Settings.Default.Save();
 
-            //try
-            //{
-            //    zedGraph_time = Convert.ToDouble(textBox2.Text);
-            //    csv_time = Convert.ToInt16(textBox1.Text);
+            try
+            {
+                zedGraph_time = Convert.ToDouble(textBox2.Text);
+                csv_time = Convert.ToInt16(textBox1.Text);
 
-            //    timer1.Interval = Convert.ToInt16(textBox6.Text);
-            //    timer2.Interval = (int)(zedGraph_time * 1000);
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("请填写正确参数！");
-            //    return;
-            //}
-            //try
-            //{
-            //    serialPort1.PortName = comboBox1.Text;
-            //    serialPort1.Open();
-            //    serialPort1.Write("start\r\n");     //发送上位机启动标志
-            //    MessageBox.Show("设置完成！");
-            //}
-            //catch
-            //{
-            //    MessageBox.Show("串口连接错误！");
-            //}    
+                dataTimer.Interval = Convert.ToInt16(textBox6.Text);
+                curveTimer.Interval = (int)(zedGraph_time * 1000);
+            }
+            catch
+            {
+                MessageBox.Show("请填写正确参数！");
+                return;
+            }
         }
 
         /// <summary>
@@ -670,6 +674,38 @@ namespace 模拟采集卡
         {
             Close_Form1();
             this.Close();
-        }       
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label1.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label2.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
     }
 }
