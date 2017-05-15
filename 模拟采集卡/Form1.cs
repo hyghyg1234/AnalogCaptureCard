@@ -23,7 +23,6 @@ namespace 模拟采集卡
             InitializeComponent();
         }
         public string PortName;
-        public double zedGraph_time;
         public double csv_time;
         Thread WriteExcelThread;
         Thread SerialThread;
@@ -192,9 +191,16 @@ namespace 模拟采集卡
         {
             textBox4.Text = Properties.Settings.Default.MIN;
             textBox3.Text = Properties.Settings.Default.MAX;
-            textBox6.Text = Properties.Settings.Default.RefreshTime;          
-            textBox1.Text = Properties.Settings.Default.CsvTime;
-            textBox2.Text = Properties.Settings.Default.ZedGraph_time;
+            textBox6.Text = Properties.Settings.Default.RefreshTime;
+            try
+            {
+                curveTimer.Interval = Convert.ToInt16(textBox6.Text);
+                dataTimer.Interval = Convert.ToInt16(textBox6.Text);
+            }
+            catch
+            {
+                MessageBox.Show("初始化参数错误！");
+            }
         }
         #endregion
 
@@ -230,18 +236,6 @@ namespace 模拟采集卡
             List_Item_Add();
             Color_Set();    //颜色设置
             init_zedgragh();    //曲线初始化           
-            try
-            {
-                zedGraph_time = Convert.ToDouble(Properties.Settings.Default.ZedGraph_time);
-                csv_time = Convert.ToDouble(Properties.Settings.Default.CsvTime);             
-                curveTimer.Interval = (int)(zedGraph_time * 1000);
-                dataTimer.Interval = Convert.ToInt16(textBox6.Text);
-            }
-            catch
-            {
-                MessageBox.Show("初始化参数错误！");
-            }
-
             SerialThread = new Thread(SerialRead);      //串口数据读取线程
             SerialThread.Start();
 
@@ -388,24 +382,6 @@ namespace 模拟采集卡
             Properties.Settings.Default.Save();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                if (Convert.ToInt16(textBox4.Text) >= Convert.ToInt16(textBox3.Text))
-                {
-                    MessageBox.Show("参数设置错误！");
-                    return;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("参数设置错误！");
-                return;
-            }
-            init_zedgragh();
-        }
-
         //刷新数据的事件
         #region
         int x = 0;  //用来抛弃前几个数据
@@ -516,24 +492,25 @@ namespace 模拟采集卡
 
         private void button14_Click(object sender, EventArgs e)
         {
-            //Properties.Settings.Default.CsvTime = textBox1.Text;
-            Properties.Settings.Default.ZedGraph_time = textBox2.Text;
             Properties.Settings.Default.RefreshTime = textBox6.Text;
             Properties.Settings.Default.Save();
 
             try
             {
-                zedGraph_time = Convert.ToDouble(textBox2.Text);
-                csv_time = Convert.ToInt16(textBox1.Text);
-
+                if (Convert.ToInt16(textBox4.Text) >= Convert.ToInt16(textBox3.Text))
+                {
+                    MessageBox.Show("参数设置错误！");
+                    return;
+                }
                 dataTimer.Interval = Convert.ToInt16(textBox6.Text);
-                curveTimer.Interval = (int)(zedGraph_time * 1000);
+                curveTimer.Interval = dataTimer.Interval;
             }
             catch
             {
                 MessageBox.Show("请填写正确参数！");
                 return;
             }
+            init_zedgragh();
         }
 
         /// <summary>
@@ -706,6 +683,34 @@ namespace 模拟采集卡
             }
             Color_Set();
             init_zedgragh();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            about aboutForm = new about();
+            aboutForm.ShowDialog();
+        }
+
+        bool chooseFlag = false;
+        private void panel1_DoubleClick(object sender, EventArgs e)
+        {
+            if (chooseFlag == false)
+            {
+                chooseFlag = true;
+                for (int i = 0; i < 8; i++)
+                {
+                    CheckItem[i].Checked = true;
+                }
+            }
+            else
+            {
+                chooseFlag = false;
+                for (int i = 0; i < 8; i++)
+                {
+                    CheckItem[i].Checked = false;
+                }
+
+            }
         }
     }
 }

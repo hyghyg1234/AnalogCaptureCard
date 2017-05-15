@@ -89,3 +89,4 @@ F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj
 F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.Setting.resources
 F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.csproj.GenerateResource.Cache
 F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.serial.resources
+F:\Documents and Settings\Administrator\桌面\上位机 (1)\模拟采集卡\obj\Debug\模拟采集卡.about.resources

@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lbDigitalMeter8 = new LBSoft.IndustrialCtrls.Meters.LBDigitalMeter();
             this.label14 = new System.Windows.Forms.Label();
@@ -60,9 +60,6 @@
             this.button14 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.curveTimer = new System.Windows.Forms.Timer(this.components);
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -70,6 +67,7 @@
             this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
             this.dataTimer = new System.Windows.Forms.Timer(this.components);
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -87,7 +85,6 @@
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
-            this.button4 = new System.Windows.Forms.Button();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -97,7 +94,9 @@
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -107,6 +106,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -446,7 +446,7 @@
             this.button14.Font = new System.Drawing.Font("宋体", 12F);
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(798, 109);
+            this.button14.Location = new System.Drawing.Point(217, 67);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(74, 39);
             this.button14.TabIndex = 132;
@@ -458,7 +458,7 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox6.Location = new System.Drawing.Point(697, 122);
+            this.textBox6.Location = new System.Drawing.Point(117, 80);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(76, 26);
             this.textBox6.TabIndex = 27;
@@ -467,39 +467,11 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(572, 128);
+            this.label22.Location = new System.Drawing.Point(8, 83);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(119, 16);
+            this.label22.Size = new System.Drawing.Size(103, 16);
             this.label22.TabIndex = 26;
-            this.label22.Text = "刷新时间（S）";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox2.Location = new System.Drawing.Point(697, 90);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(76, 26);
-            this.textBox2.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(572, 93);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(119, 16);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "曲线时间（S）";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(572, 58);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 16);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "存储时间（S）";
+            this.label22.Text = "刷新时间 ms";
             // 
             // curveTimer
             // 
@@ -517,10 +489,11 @@
             this.toolStripButton2,
             this.toolStripButton5,
             this.toolStripButton4,
+            this.toolStripButton7,
             this.toolStripButton6});
             this.toolStrip1.Location = new System.Drawing.Point(7, 41);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(506, 86);
+            this.toolStrip1.Size = new System.Drawing.Size(576, 86);
             this.toolStrip1.TabIndex = 186;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -588,6 +561,19 @@
             this.toolStripButton4.Text = "开始采集";
             this.toolStripButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
+            // 
+            // toolStripButton7
+            // 
+            this.toolStripButton7.Font = new System.Drawing.Font("华文楷体", 14F, System.Drawing.FontStyle.Bold);
+            this.toolStripButton7.ForeColor = System.Drawing.Color.Blue;
+            this.toolStripButton7.Image = global::模拟采集卡.Properties.Resources.about;
+            this.toolStripButton7.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton7.Name = "toolStripButton7";
+            this.toolStripButton7.Size = new System.Drawing.Size(66, 83);
+            this.toolStripButton7.Text = "关  于";
+            this.toolStripButton7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
             // toolStripButton6
             // 
@@ -663,6 +649,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(636, 34);
             this.panel1.TabIndex = 185;
+            this.panel1.DoubleClick += new System.EventHandler(this.panel1_DoubleClick);
             // 
             // checkBox3
             // 
@@ -784,33 +771,21 @@
             this.zedGraphControl1.Size = new System.Drawing.Size(638, 398);
             this.zedGraphControl1.TabIndex = 129;
             // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("宋体", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.ForeColor = System.Drawing.Color.Red;
-            this.button4.Location = new System.Drawing.Point(924, 111);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(60, 46);
-            this.button4.TabIndex = 173;
-            this.button4.Text = "设定";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
             // textBox3
             // 
-            this.textBox3.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox3.Location = new System.Drawing.Point(924, 41);
+            this.textBox3.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox3.Location = new System.Drawing.Point(117, 16);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(81, 29);
+            this.textBox3.Size = new System.Drawing.Size(76, 26);
             this.textBox3.TabIndex = 170;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
-            this.textBox4.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox4.Location = new System.Drawing.Point(924, 76);
+            this.textBox4.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox4.Location = new System.Drawing.Point(117, 48);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(81, 29);
+            this.textBox4.Size = new System.Drawing.Size(76, 26);
             this.textBox4.TabIndex = 172;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -830,24 +805,24 @@
             // 
             // dataGridView1
             // 
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
@@ -891,13 +866,40 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // textBox1
+            // label3
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox1.Location = new System.Drawing.Point(697, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 26);
-            this.textBox1.TabIndex = 22;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(8, 19);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(93, 16);
+            this.label3.TabIndex = 190;
+            this.label3.Text = "曲线最大值";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(8, 51);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(93, 16);
+            this.label4.TabIndex = 191;
+            this.label4.Text = "曲线最小值";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label4);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.button14);
+            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.textBox4);
+            this.groupBox1.Location = new System.Drawing.Point(646, 41);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(309, 114);
+            this.groupBox1.TabIndex = 192;
+            this.groupBox1.TabStop = false;
             // 
             // Form1
             // 
@@ -906,22 +908,13 @@
             this.CaptionBackColorBottom = System.Drawing.Color.Turquoise;
             this.CaptionBackColorTop = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1021, 637);
-            this.Controls.Add(this.button14);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.toolStrip1);
             this.Name = "Form1";
-            this.Text = "V1";
+            this.Text = "模拟采集卡";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox2.ResumeLayout(false);
@@ -937,6 +930,8 @@
             this.tabControl1.ResumeLayout(false);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -974,14 +969,10 @@
         private System.Windows.Forms.ToolStripButton toolStripButton2;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Timer dataTimer;
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private ZedGraph.ZedGraphControl zedGraphControl1;
@@ -1008,7 +999,10 @@
         private System.Windows.Forms.ToolStripMenuItem 打开ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.ColorDialog colorDialog1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.ToolStripButton toolStripButton7;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
 
