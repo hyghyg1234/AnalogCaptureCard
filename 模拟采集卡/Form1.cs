@@ -93,8 +93,8 @@ namespace 模拟采集卡
             mGraphPane.XAxis.Scale.MinorStep = 1;//X轴小步长1,也就是小间隔
             mGraphPane.XAxis.Scale.MajorStep = 10;//X轴大步长为5，也就是显示文字的大间隔
 
-            mGraphPane.YAxis.Scale.MinorStep = 1;//X轴小步长1,也就是小间隔
-            mGraphPane.YAxis.Scale.MajorStep = 2;//X轴大步长为5，也就是显示文字的大间隔
+            mGraphPane.YAxis.Scale.MinorStep = 1;//X轴小步长1,也就是小间隔(刻度线间隔)
+            mGraphPane.YAxis.Scale.MajorStep = 1;//X轴大步长为5，也就是显示文字的大间隔（标识数字间隔）
 
             try
             {
@@ -141,14 +141,7 @@ namespace 模拟采集卡
             //dataGridView1.RowHeadersVisible = false;//行标题隐藏                    
             dataGridView1.DefaultCellStyle.BackColor = Color.Black;
             //dataGridView1.DefaultCellStyle.ForeColor = Color.Blue;
-            dataGridView1.DefaultCellStyle.Font = new System.Drawing.Font("宋体", 12F);
-                 
-            //dataGridView1添加
-            //for (int i = 0; i < 20; i++)
-            //{
-            //    int index = this.dataGridView1.Rows.Add();
-            //}
-            //datagridview 格式设置结束
+            dataGridView1.DefaultCellStyle.Font = new System.Drawing.Font("宋体", 12F);               
         }
         //dataGridView1数据的DataTable
         private System.Data.DataTable m_GradeTable;
@@ -709,7 +702,6 @@ namespace 模拟采集卡
                 {
                     CheckItem[i].Checked = false;
                 }
-
             }
         }
     }
