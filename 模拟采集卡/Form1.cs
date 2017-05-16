@@ -646,6 +646,8 @@ namespace 模拟采集卡
             this.Close();
         }
 
+        //颜色设置事件
+        #region
         private void label1_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
@@ -678,6 +680,103 @@ namespace 模拟采集卡
             init_zedgragh();
         }
 
+        private void label12_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label12.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label10.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label20_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label20.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label18_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label18.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label16_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label16.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+            //使用自定义颜色  
+            colorDialog1.AllowFullOpen = true;
+            //提供自己给定的颜色  
+            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.ShowHelp = true;
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                label14.ForeColor = colorDialog1.Color;
+            }
+            Color_Set();
+            init_zedgragh();
+        }
+        #endregion
+
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
             about aboutForm = new about();
@@ -704,5 +803,18 @@ namespace 模拟采集卡
                 }
             }
         }
+
+        private void zedGraphControl1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Y > 380)
+            {
+                panel1.Visible = true;
+            }
+            else
+            {
+                panel1.Visible = false;
+            }
+        }
+ 
     }
 }

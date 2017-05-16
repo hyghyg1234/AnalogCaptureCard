@@ -74,9 +74,7 @@ namespace 模拟采集卡
 
         private void serial_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Properties.Settings.Default.PortName = comboBox1.Text;
-            Properties.Settings.Default.BaudRate = comboBox2.Text;
-            Properties.Settings.Default.Save();
+               
         }
 
         private void button14_Click(object sender, EventArgs e)
@@ -90,6 +88,9 @@ namespace 模拟采集卡
                 serialPort1.PortName = comboBox1.Text;
                 serialPort1.BaudRate = Convert.ToInt32(comboBox2.Text, 10);
                 serialPort1.Open();
+                Properties.Settings.Default.PortName = comboBox1.Text;
+                Properties.Settings.Default.BaudRate = comboBox2.Text;
+                Properties.Settings.Default.Save();
             }
             catch
             {
