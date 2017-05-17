@@ -29,5 +29,8 @@
     <Setting Name="BaudRate" Type="System.String" Scope="User">
       <Value Profile="(Default)">115200</Value>
     </Setting>
+    <Setting Name="YMajorStep" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -130,5 +130,17 @@ namespace 模拟采集卡.Properties {
                 this["BaudRate"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public string YMajorStep {
+            get {
+                return ((string)(this["YMajorStep"]));
+            }
+            set {
+                this["YMajorStep"] = value;
+            }
+        }
     }
 }

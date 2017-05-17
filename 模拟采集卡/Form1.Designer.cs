@@ -97,6 +97,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -452,7 +457,7 @@
             this.button14.Font = new System.Drawing.Font("宋体", 12F);
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(216, 67);
+            this.button14.Location = new System.Drawing.Point(226, 84);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(74, 39);
             this.button14.TabIndex = 132;
@@ -464,20 +469,20 @@
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox6.Location = new System.Drawing.Point(117, 80);
+            this.textBox6.Location = new System.Drawing.Point(124, 99);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(76, 26);
+            this.textBox6.Size = new System.Drawing.Size(64, 26);
             this.textBox6.TabIndex = 27;
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label22.Location = new System.Drawing.Point(8, 83);
+            this.label22.Location = new System.Drawing.Point(9, 102);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(103, 16);
+            this.label22.Size = new System.Drawing.Size(76, 16);
             this.label22.TabIndex = 26;
-            this.label22.Text = "刷新时间 ms";
+            this.label22.Text = "刷新时间";
             // 
             // curveTimer
             // 
@@ -782,18 +787,18 @@
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox3.Location = new System.Drawing.Point(117, 16);
+            this.textBox3.Location = new System.Drawing.Point(124, 12);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(76, 26);
+            this.textBox3.Size = new System.Drawing.Size(64, 26);
             this.textBox3.TabIndex = 170;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox4.Location = new System.Drawing.Point(117, 48);
+            this.textBox4.Location = new System.Drawing.Point(124, 41);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(76, 26);
+            this.textBox4.Size = new System.Drawing.Size(64, 26);
             this.textBox4.TabIndex = 172;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
@@ -878,7 +883,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(8, 19);
+            this.label3.Location = new System.Drawing.Point(9, 19);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(93, 16);
             this.label3.TabIndex = 190;
@@ -888,7 +893,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(8, 51);
+            this.label4.Location = new System.Drawing.Point(9, 44);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 16);
             this.label4.TabIndex = 191;
@@ -896,6 +901,11 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label5);
+            this.groupBox1.Controls.Add(this.label23);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.button14);
@@ -903,11 +913,59 @@
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Location = new System.Drawing.Point(692, 41);
+            this.groupBox1.Location = new System.Drawing.Point(661, 35);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(296, 114);
+            this.groupBox1.Size = new System.Drawing.Size(309, 129);
             this.groupBox1.TabIndex = 192;
             this.groupBox1.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(194, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 16);
+            this.label5.TabIndex = 194;
+            this.label5.Text = "V";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(194, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 16);
+            this.label8.TabIndex = 193;
+            this.label8.Text = "V";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label9.Location = new System.Drawing.Point(194, 102);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(26, 16);
+            this.label9.TabIndex = 192;
+            this.label9.Text = "ms";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox1.Location = new System.Drawing.Point(124, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(64, 26);
+            this.textBox1.TabIndex = 193;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label23.Location = new System.Drawing.Point(9, 73);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(110, 16);
+            this.label23.TabIndex = 195;
+            this.label23.Text = "曲线刻度间隔";
             // 
             // Form1
             // 
@@ -1011,6 +1069,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label23;
     }
 }
 

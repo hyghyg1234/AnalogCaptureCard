@@ -69,7 +69,7 @@ namespace 模拟采集卡
         #endregion
 
         //曲线初始化
-        #region
+        #region zedgragh_Init
         private void init_zedgragh()
         {
             int chartPoint = 200;
@@ -98,8 +98,9 @@ namespace 模拟采集卡
 
             try
             {
-                mGraphPane.YAxis.Scale.Min = Convert.ToInt16(textBox4.Text);      //电压轴最小值0
-                mGraphPane.YAxis.Scale.Max = Convert.ToInt16(textBox3.Text);    //电压最大值
+                mGraphPane.YAxis.Scale.Min = Convert.ToDouble(textBox4.Text);      //电压轴最小值0
+                mGraphPane.YAxis.Scale.Max = Convert.ToDouble(textBox3.Text);    //电压最大值
+                mGraphPane.YAxis.Scale.MajorStep = Convert.ToDouble(textBox1.Text);     //刻度线的距离
             }
             catch
             {
@@ -177,6 +178,7 @@ namespace 模拟采集卡
             textBox4.Text = Properties.Settings.Default.MIN;
             textBox3.Text = Properties.Settings.Default.MAX;
             textBox6.Text = Properties.Settings.Default.RefreshTime;
+            textBox1.Text = Properties.Settings.Default.YMajorStep;
             try
             {
                 curveTimer.Interval = Convert.ToInt16(textBox6.Text);
@@ -486,15 +488,17 @@ namespace 模拟采集卡
         private void button14_Click(object sender, EventArgs e)
         {
             Properties.Settings.Default.RefreshTime = textBox6.Text;
-            Properties.Settings.Default.Save();
-
+            Properties.Settings.Default.YMajorStep = textBox1.Text;          
             try
             {
-                if (Convert.ToInt16(textBox4.Text) >= Convert.ToInt16(textBox3.Text))
+                if (Convert.ToDouble(textBox4.Text) >= Convert.ToDouble(textBox3.Text))
                 {
                     MessageBox.Show("参数设置错误！");
                     return;
                 }
+                mGraphPane.YAxis.Scale.Min = Convert.ToDouble(textBox4.Text);      //电压轴最小值0
+                mGraphPane.YAxis.Scale.Max = Convert.ToDouble(textBox3.Text);      //电压最大值
+                mGraphPane.YAxis.Scale.MajorStep = Convert.ToDouble(textBox1.Text);     //刻度线的距离
                 dataTimer.Interval = Convert.ToInt16(textBox6.Text);
                 curveTimer.Interval = dataTimer.Interval;
             }
@@ -503,15 +507,7 @@ namespace 模拟采集卡
                 MessageBox.Show("请填写正确参数！");
                 return;
             }
-            try
-            {
-                mGraphPane.YAxis.Scale.Min = Convert.ToInt16(textBox4.Text);      //电压轴最小值0
-                mGraphPane.YAxis.Scale.Max = Convert.ToInt16(textBox3.Text);    //电压最大值
-            }
-            catch
-            {
-                MessageBox.Show("参数错误！");
-            }
+            Properties.Settings.Default.Save();
         }
 
         /// <summary>
