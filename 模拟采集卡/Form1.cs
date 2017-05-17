@@ -24,16 +24,16 @@ namespace 模拟采集卡
         }
         public string PortName;
         public double csv_time;
-        Thread WriteExcelThread;
-        Thread SerialThread;
-        int[] CheckArray = new int[8];
+        Thread WriteExcelThread;    
+        Thread SerialThread;        //读取串口数据线程
+        int[] CheckArray = new int[8];      //存放哪些数据显示哪些不显示
         bool StartFlag = false;
         private GraphPane mGraphPane;
-
+        char[] buf_chooseFlag = new char[32];    //用于判断曲线显示选择，字符串第几位对应第几个传感器，1代表显示、0不显示
         serial serial = new serial();
         CSVHelper csvHelper = new CSVHelper();
 
-        List<System.Windows.Forms.CheckBox> CheckItem = new List<System.Windows.Forms.CheckBox>();
+        List<System.Windows.Forms.CheckBox> CheckList = new List<System.Windows.Forms.CheckBox>();
         List<LBSoft.IndustrialCtrls.Meters.LBDigitalMeter> MeterList = new List<LBSoft.IndustrialCtrls.Meters.LBDigitalMeter>();
         List<System.Windows.Forms.Label> LabelList = new List<System.Windows.Forms.Label>();
 
@@ -41,14 +41,14 @@ namespace 模拟采集卡
         #region
         private void List_Item_Add()
         {
-            CheckItem.Add(checkBox1);
-            CheckItem.Add(checkBox2);
-            CheckItem.Add(checkBox3);
-            CheckItem.Add(checkBox4);
-            CheckItem.Add(checkBox5);
-            CheckItem.Add(checkBox6);
-            CheckItem.Add(checkBox7);
-            CheckItem.Add(checkBox8);
+            CheckList.Add(checkBox1);
+            CheckList.Add(checkBox2);
+            CheckList.Add(checkBox3);
+            CheckList.Add(checkBox4);
+            CheckList.Add(checkBox5);
+            CheckList.Add(checkBox6);
+            CheckList.Add(checkBox7);
+            CheckList.Add(checkBox8);
             MeterList.Add(lbDigitalMeter1);
             MeterList.Add(lbDigitalMeter2);
             MeterList.Add(lbDigitalMeter3);
@@ -65,6 +65,17 @@ namespace 模拟采集卡
             LabelList.Add(label18);
             LabelList.Add(label16);
             LabelList.Add(label14);
+            for (int i = 0; i < 8; i++)
+            {
+                if (buf_chooseFlag[i] == '1')
+                {
+                    CheckList[i].Checked = true;
+                }
+                else
+                {
+                    CheckList[i].Checked = false;
+                }
+            }
         }        
         #endregion
 
@@ -126,7 +137,7 @@ namespace 模拟采集卡
             for (int i = 0; i < 8; i++)
             {
                 lists[i] = new RollingPointPairList(chartPoint);
-                LineItem myCurve = mGraphPane.AddCurve("", lists[i], CheckItem[i].ForeColor, SymbolType.None);
+                LineItem myCurve = mGraphPane.AddCurve("", lists[i], CheckList[i].ForeColor, SymbolType.None);
             }      
         }
         #endregion
@@ -179,6 +190,7 @@ namespace 模拟采集卡
             textBox3.Text = Properties.Settings.Default.MAX;
             textBox6.Text = Properties.Settings.Default.RefreshTime;
             textBox1.Text = Properties.Settings.Default.YMajorStep;
+            buf_chooseFlag = Properties.Settings.Default.chooseDataFlag.ToCharArray();         //读取曲线选择设置           
             try
             {
                 curveTimer.Interval = Convert.ToInt16(textBox6.Text);
@@ -197,7 +209,7 @@ namespace 模拟采集卡
             for (int i = 0; i < 8; i++)
             {
                 MeterList[i].ForeColor = LabelList[i].ForeColor;
-                CheckItem[i].ForeColor = MeterList[i].ForeColor;
+                CheckList[i].ForeColor = MeterList[i].ForeColor;
             }
             for (int i = 0; i < 8; i++)
             {
@@ -210,10 +222,10 @@ namespace 模拟采集卡
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-            datagridview_Init();//datagridview初始化
-            parameter_Init();   //参数初始化
-            BindData();         //数据绑定到表格
+        {           
+            datagridview_Init();    //datagridview初始化
+            parameter_Init();       //参数初始化
+            BindData();             //数据绑定到表格
 
             Control.CheckForIllegalCrossThreadCalls = false;
             
@@ -307,35 +319,35 @@ namespace 模拟采集卡
                 curve[i] = zedGraphControl1.GraphPane.CurveList[i] as LineItem;
                 pLists[i] = curve[i].Points as IPointListEdit;
             }
-            if (CheckItem[0].Checked)
+            if (CheckList[0].Checked)
             {
                 pLists[0].Add(time, Convert.ToDouble(lbDigitalMeter1.Value));        
             }
-            if (CheckItem[1].Checked)
+            if (CheckList[1].Checked)
             {
                 pLists[1].Add(time, Convert.ToDouble(lbDigitalMeter2.Value));
             }
-            if (CheckItem[2].Checked)
+            if (CheckList[2].Checked)
             {
                 pLists[2].Add(time, Convert.ToDouble(lbDigitalMeter3.Value));
             }
-            if (CheckItem[3].Checked)
+            if (CheckList[3].Checked)
             {
                 pLists[3].Add(time, Convert.ToDouble(lbDigitalMeter4.Value));
             }
-            if (CheckItem[4].Checked)
+            if (CheckList[4].Checked)
             {
                 pLists[4].Add(time, Convert.ToDouble(lbDigitalMeter5.Value));
             }
-            if (CheckItem[5].Checked)
+            if (CheckList[5].Checked)
             {
                 pLists[5].Add(time, Convert.ToDouble(lbDigitalMeter6.Value));
             }
-            if (CheckItem[6].Checked)
+            if (CheckList[6].Checked)
             {
                 pLists[6].Add(time, Convert.ToDouble(lbDigitalMeter7.Value));
             }
-            if (CheckItem[7].Checked)
+            if (CheckList[7].Checked)
             {
                 pLists[7].Add(time, Convert.ToDouble(lbDigitalMeter8.Value));
             }
@@ -486,9 +498,7 @@ namespace 模拟采集卡
         }
 
         private void button14_Click(object sender, EventArgs e)
-        {
-            Properties.Settings.Default.RefreshTime = textBox6.Text;
-            Properties.Settings.Default.YMajorStep = textBox1.Text;          
+        {                  
             try
             {
                 if (Convert.ToDouble(textBox4.Text) >= Convert.ToDouble(textBox3.Text))
@@ -507,6 +517,8 @@ namespace 模拟采集卡
                 MessageBox.Show("请填写正确参数！");
                 return;
             }
+            Properties.Settings.Default.RefreshTime = textBox6.Text;
+            Properties.Settings.Default.YMajorStep = textBox1.Text;
             Properties.Settings.Default.Save();
         }
 
@@ -636,7 +648,20 @@ namespace 模拟采集卡
         //关闭程序
         private void Close_Form1()
         {
-            SerialThread.Abort();          
+            SerialThread.Abort();
+            for (int i = 0; i < 8; i++)
+            {
+                if (CheckList[i].Checked == true)
+                {
+                    buf_chooseFlag[i] = '1';
+                }
+                else
+                {
+                    buf_chooseFlag[i] = '0';
+                }
+            }
+            Properties.Settings.Default.chooseDataFlag = new string(buf_chooseFlag);//将数组转换成字符串    
+            Properties.Settings.Default.Save();
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -771,7 +796,7 @@ namespace 模拟采集卡
                 chooseFlag = true;
                 for (int i = 0; i < 8; i++)
                 {
-                    CheckItem[i].Checked = true;
+                    CheckList[i].Checked = true;
                 }
             }
             else
@@ -779,7 +804,7 @@ namespace 模拟采集卡
                 chooseFlag = false;
                 for (int i = 0; i < 8; i++)
                 {
-                    CheckItem[i].Checked = false;
+                    CheckList[i].Checked = false;
                 }
             }
         }

@@ -32,5 +32,8 @@
     <Setting Name="YMajorStep" Type="System.String" Scope="User">
       <Value Profile="(Default)">1</Value>
     </Setting>
+    <Setting Name="chooseDataFlag" Type="System.String" Scope="User">
+      <Value Profile="(Default)">00000000</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

@@ -142,5 +142,17 @@ namespace 模拟采集卡.Properties {
                 this["YMajorStep"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("00000000")]
+        public string chooseDataFlag {
+            get {
+                return ((string)(this["chooseDataFlag"]));
+            }
+            set {
+                this["chooseDataFlag"] = value;
+            }
+        }
     }
 }
