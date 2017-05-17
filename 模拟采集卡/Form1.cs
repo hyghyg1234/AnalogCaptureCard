@@ -126,7 +126,7 @@ namespace 模拟采集卡
             {
                 lists[i] = new RollingPointPairList(chartPoint);
                 LineItem myCurve = mGraphPane.AddCurve("", lists[i], CheckItem[i].ForeColor, SymbolType.None);
-            }
+            }      
         }
         #endregion
 
@@ -166,15 +166,7 @@ namespace 模拟采集卡
             for (int i = 0; i < this.dataGridView1.Columns.Count; i++)
             {
                 this.dataGridView1.Columns[i].SortMode = DataGridViewColumnSortMode.NotSortable;
-            }
-            dataGridView1.Columns[0].DefaultCellStyle.ForeColor = lbDigitalMeter1.ForeColor;
-            dataGridView1.Columns[1].DefaultCellStyle.ForeColor = lbDigitalMeter2.ForeColor;
-            dataGridView1.Columns[2].DefaultCellStyle.ForeColor = lbDigitalMeter3.ForeColor;
-            dataGridView1.Columns[3].DefaultCellStyle.ForeColor = lbDigitalMeter4.ForeColor;
-            dataGridView1.Columns[4].DefaultCellStyle.ForeColor = lbDigitalMeter5.ForeColor;
-            dataGridView1.Columns[5].DefaultCellStyle.ForeColor = lbDigitalMeter6.ForeColor;
-            dataGridView1.Columns[6].DefaultCellStyle.ForeColor = lbDigitalMeter7.ForeColor;
-            dataGridView1.Columns[7].DefaultCellStyle.ForeColor = lbDigitalMeter8.ForeColor;
+            }         
         }
         #endregion
 
@@ -205,6 +197,14 @@ namespace 模拟采集卡
                 MeterList[i].ForeColor = LabelList[i].ForeColor;
                 CheckItem[i].ForeColor = MeterList[i].ForeColor;
             }
+            for (int i = 0; i < 8; i++)
+            {
+                mGraphPane.CurveList[i].Color = LabelList[i].ForeColor;
+            }
+            for (int i = 0; i < 8; i++)
+            {
+                dataGridView1.Columns[i].DefaultCellStyle.ForeColor = LabelList[i].ForeColor;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -226,9 +226,9 @@ namespace 模拟采集卡
                     CheckArray[i] = 0;
                 }
             }
-            List_Item_Add();
-            Color_Set();    //颜色设置
-            init_zedgragh();    //曲线初始化           
+            List_Item_Add();           
+            init_zedgragh();    //曲线初始化  
+            Color_Set();    //颜色设置         
             SerialThread = new Thread(SerialRead);      //串口数据读取线程
             SerialThread.Start();
 
@@ -503,7 +503,15 @@ namespace 模拟采集卡
                 MessageBox.Show("请填写正确参数！");
                 return;
             }
-            init_zedgragh();
+            try
+            {
+                mGraphPane.YAxis.Scale.Min = Convert.ToInt16(textBox4.Text);      //电压轴最小值0
+                mGraphPane.YAxis.Scale.Max = Convert.ToInt16(textBox3.Text);    //电压最大值
+            }
+            catch
+            {
+                MessageBox.Show("参数错误！");
+            }
         }
 
         /// <summary>
@@ -647,13 +655,11 @@ namespace 模拟采集卡
         }
 
         //颜色设置事件
-        #region
+        #region Color Set
         private void label1_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
-            colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
+            colorDialog1.AllowFullOpen = true; 
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -661,15 +667,12 @@ namespace 模拟采集卡
                 label1.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label2_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -677,15 +680,12 @@ namespace 模拟采集卡
                 label2.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label12_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -693,15 +693,12 @@ namespace 模拟采集卡
                 label12.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label10_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -709,15 +706,12 @@ namespace 模拟采集卡
                 label10.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label20_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -725,15 +719,12 @@ namespace 模拟采集卡
                 label20.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label18_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -741,15 +732,12 @@ namespace 模拟采集卡
                 label18.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label16_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -757,15 +745,12 @@ namespace 模拟采集卡
                 label16.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
 
         private void label14_Click(object sender, EventArgs e)
         {
             //使用自定义颜色  
             colorDialog1.AllowFullOpen = true;
-            //提供自己给定的颜色  
-            colorDialog1.CustomColors = new int[] { 6916092, 15195440, 16107657, 1836924, 3758726, 12566463, 7526079, 7405793, 6945974, 241502, 2296476, 5130294, 3102017, 7324121, 14993507, 11730944 };
             colorDialog1.ShowHelp = true;
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
@@ -773,7 +758,6 @@ namespace 模拟采集卡
                 label14.ForeColor = colorDialog1.Color;
             }
             Color_Set();
-            init_zedgragh();
         }
         #endregion
 
@@ -815,6 +799,5 @@ namespace 模拟采集卡
                 panel1.Visible = false;
             }
         }
- 
     }
 }

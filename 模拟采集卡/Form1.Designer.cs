@@ -452,7 +452,7 @@
             this.button14.Font = new System.Drawing.Font("宋体", 12F);
             this.button14.Image = ((System.Drawing.Image)(resources.GetObject("button14.Image")));
             this.button14.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button14.Location = new System.Drawing.Point(217, 67);
+            this.button14.Location = new System.Drawing.Point(216, 67);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(74, 39);
             this.button14.TabIndex = 132;
@@ -903,12 +903,11 @@
             this.groupBox1.Controls.Add(this.label22);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Location = new System.Drawing.Point(646, 41);
+            this.groupBox1.Location = new System.Drawing.Point(692, 41);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(296, 114);
             this.groupBox1.TabIndex = 192;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Visible = false;
             // 
             // Form1
             // 

@@ -61,7 +61,7 @@ namespace 模拟采集卡.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("120")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
         public string MAX {
             get {
                 return ((string)(this["MAX"]));
@@ -73,7 +73,7 @@ namespace 模拟采集卡.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
         public string MIN {
             get {
                 return ((string)(this["MIN"]));
