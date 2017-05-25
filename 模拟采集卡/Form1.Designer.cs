@@ -97,11 +97,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
             this.groupBox2.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
@@ -919,26 +920,6 @@
             this.groupBox1.TabIndex = 192;
             this.groupBox1.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(194, 44);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 16);
-            this.label5.TabIndex = 194;
-            this.label5.Text = "V";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(194, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(17, 16);
-            this.label8.TabIndex = 193;
-            this.label8.Text = "V";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -949,13 +930,15 @@
             this.label9.TabIndex = 192;
             this.label9.Text = "ms";
             // 
-            // textBox1
+            // label5
             // 
-            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
-            this.textBox1.Location = new System.Drawing.Point(124, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(64, 26);
-            this.textBox1.TabIndex = 193;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label5.Location = new System.Drawing.Point(194, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(17, 16);
+            this.label5.TabIndex = 194;
+            this.label5.Text = "V";
             // 
             // label23
             // 
@@ -967,6 +950,32 @@
             this.label23.TabIndex = 195;
             this.label23.Text = "曲线刻度间隔";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("宋体", 12F, System.Drawing.FontStyle.Bold);
+            this.label8.Location = new System.Drawing.Point(194, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(17, 16);
+            this.label8.TabIndex = 193;
+            this.label8.Text = "V";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("宋体", 12F);
+            this.textBox1.Location = new System.Drawing.Point(124, 70);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(64, 26);
+            this.textBox1.TabIndex = 193;
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Location = new System.Drawing.Point(556, 134);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(120, 84);
+            this.checkedListBox1.TabIndex = 193;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -974,6 +983,7 @@
             this.CaptionBackColorBottom = System.Drawing.Color.Turquoise;
             this.CaptionBackColorTop = System.Drawing.Color.PowderBlue;
             this.ClientSize = new System.Drawing.Size(1021, 637);
+            this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.tabControl1);
@@ -1074,6 +1084,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
     }
 }
 
